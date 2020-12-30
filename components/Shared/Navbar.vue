@@ -28,13 +28,12 @@ export default {}
   top: 0;
 }
 .title-nav {
-  font-family: 'Manrope', sans-serif;
   font-size: 26px;
   color: #def5f2;
   padding: 5px 20px;
 }
 .topnav {
-  background: linear-gradient(-45deg, #6628ea 20%, #6628ea 70%);
+  background: linear-gradient(-45deg, #0e65e5 20%, #0e65e5 70%);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
@@ -42,7 +41,6 @@ export default {}
   align-content: center;
   align-items: center;
   padding: 20px 80px;
-  font-family: 'Manrope', sans-serif;
 }
 
 .topnav a {
@@ -50,7 +48,7 @@ export default {}
   float: left;
   text-align: center;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   padding: 10px 20px;
   letter-spacing: 0;
   font-weight: 500;
@@ -70,8 +68,8 @@ export default {}
   float: left;
   text-align: center;
   text-decoration: none;
-  background: #a0ece5;
-  color: #301c6b;
+  background: #d2448d;
+  color: #fff;
   box-shadow: none;
   border-radius: 8px;
   font-size: 16px;
@@ -82,7 +80,7 @@ export default {}
 .topnav a:hover {
   background: #ffffff;
   border-radius: 8px;
-  color: #301c6b;
+  color: #d2448d;
 }
 
 .topnav a.active {

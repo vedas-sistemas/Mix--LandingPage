@@ -1,19 +1,15 @@
 <template>
   <div>
-    <Navbar />
     <div class="body">
+      <Navbar />
       <Header />
+      <Feature />
+      <CardPlan />
     </div>
   </div>
 </template>
 
-<script>
-import Header from '../components/Header/Header.vue'
-import Navbar from '../components/Shared/Navbar.vue'
-export default {
-  components: { Navbar, Header },
-}
-</script>
+<script></script>
 
 <style>
 @media only screen and (min-width: 64.063em) {
@@ -21,10 +17,6 @@ export default {
     max-width: 1490px;
     margin: 0 auto;
     font-family: 'Monda', sans-serif;
-  }
-  .body > .header {
-    margin: 0px !important;
-    bottom: 0;
   }
 }
 * {
