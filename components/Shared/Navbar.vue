@@ -33,7 +33,7 @@ export default {}
   padding: 5px 20px;
 }
 .topnav {
-  background: linear-gradient(-45deg, #0e65e5 20%, #0e65e5 70%);
+  background: linear-gradient(-45deg, #8145ff 20%, #8145ff 70%);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;

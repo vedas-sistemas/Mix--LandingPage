@@ -38,7 +38,7 @@ export default {
 
 <style>
 .header {
-  background-color: #0e65e5;
+  background-color: #8145ff;
   background-repeat: no-repeat;
 }
 .header-child-btn a {
@@ -57,7 +57,7 @@ export default {
 @media all and (min-width: 1024px) and (max-width: 1490px) {
   .header-container {
     color: #def5f2;
-    padding: 60px 80px;
+    padding: 40px 80px;
     display: grid;
     grid-template-columns: 60% 40%;
     align-items: center;
@@ -74,7 +74,7 @@ export default {
     width: 500px;
   }
   .header-child-title {
-    font-size: 48px;
+    font-size: 38px;
     font-weight: bold;
   }
   .header-child-details {
