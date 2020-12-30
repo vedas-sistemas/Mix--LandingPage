@@ -14,7 +14,7 @@
         v-for="(n, index) in 4"
         :key="index"
         class="card"
-        :class="index === 1 ? 'card-contrast' : ''"
+        :class="index === 2 ? 'card-contrast' : ''"
       >
         <div class="card-image">
           <img
@@ -58,7 +58,7 @@
 export default {
   data() {
     return {
-      cardContrast: false,
+      cardContrast: true,
     }
   },
 }
@@ -172,7 +172,6 @@ export default {
 .card-contrast {
   border: 0;
   background: #4d04ea;
-  backdrop-filter: blur(5px);
 }
 .card-contrast .card-body .card-subtitle {
   font-size: 16px;

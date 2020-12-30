@@ -5,6 +5,7 @@
       <Header />
       <Feature />
       <CardPlan />
+      <DetailsApp />
     </div>
   </div>
 </template>
