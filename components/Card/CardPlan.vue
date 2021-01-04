@@ -10,7 +10,12 @@
       >
     </div>
     <div class="container">
-      <div v-for="n in 4" :key="n" class="card">
+      <div
+        v-for="(n, index) in 4"
+        :key="index"
+        class="card"
+        :class="index === 2 ? 'card-contrast' : ''"
+      >
         <div class="card-image">
           <img
             src="https://www.flaticon.com/svg/static/icons/svg/3529/3529890.svg"
@@ -50,12 +55,18 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      cardContrast: true,
+    }
+  },
+}
 </script>
 
 <style>
 .plan-section {
-  background-color: #0e65e5;
+  background-color: #8145ff;
   background-repeat: no-repeat;
   padding: 100px 0px;
 }
@@ -84,8 +95,8 @@ export default {}
   justify-content: center;
 }
 .card {
-  margin: 15px 20px;
-  padding: 40px;
+  margin: 15px 10px;
+  padding: 35px;
   border-radius: 40px;
   border: 1px solid #eff2f6;
   text-decoration: none;
@@ -99,6 +110,7 @@ export default {}
   flex-direction: column;
   align-items: center;
 }
+
 .card-body {
   margin: 30px 0px;
 }
@@ -147,7 +159,7 @@ export default {}
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #0e65e5;
+  color: #8145ff;
   text-align: center;
 }
 .list .list-item {
@@ -156,5 +168,44 @@ export default {}
   display: flex;
   align-items: center;
   margin: 15px 0px;
+}
+.card-contrast {
+  border: 0;
+  background: #4d04ea;
+}
+.card-contrast .card-body .card-subtitle {
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffff;
+  text-align: center;
+}
+.card-contrast .card-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffff;
+  text-align: center;
+}
+.card-contrast .card-btn a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  background: #fff;
+  color: #d2448d;
+  box-shadow: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 18px 32px 16px;
+}
+.card-contrast .card-body .card-text {
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+}
+.card-contrast .card-link {
+  text-decoration: none;
+  color: white;
 }
 </style>

@@ -5,10 +5,10 @@
       <Header />
       <Feature />
       <CardPlan />
+      <DetailsApp />
     </div>
   </div>
 </template>
-
 <script></script>
 
 <style>
