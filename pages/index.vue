@@ -6,6 +6,8 @@
       <Feature />
       <CardPlan />
       <DetailsApp />
+      <Categorie />
+      <Test />
     </div>
   </div>
 </template>

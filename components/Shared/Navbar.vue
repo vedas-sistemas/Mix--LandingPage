@@ -33,7 +33,7 @@ export default {}
   padding: 5px 20px;
 }
 .topnav {
-  background: linear-gradient(-45deg, #8145ff 20%, #8145ff 70%);
+  background: linear-gradient(-45deg, #4d04ea 20%, #4d04ea 70%);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
@@ -68,8 +68,8 @@ export default {}
   float: left;
   text-align: center;
   text-decoration: none;
-  background: #d2448d;
-  color: #fff;
+  background: #ffffff;
+  color: #4d04ea;
   box-shadow: none;
   border-radius: 8px;
   font-size: 16px;
@@ -78,9 +78,9 @@ export default {}
 }
 
 .topnav a:hover {
-  background: #ffffff;
+  background: #f7bd00;
   border-radius: 8px;
-  color: #d2448d;
+  color: #ffffff;
 }
 
 .topnav a.active {
