@@ -66,18 +66,16 @@ export default {
 
 <style>
 .plan-section {
-  background-color: #8145ff;
   background-repeat: no-repeat;
-  padding: 100px 0px;
+  padding: 0px 80px;
 }
 .plan-section .title {
   font-style: normal;
   font-weight: 800;
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 48px;
+  line-height: 58px;
   text-align: center;
-
-  color: #ffffff;
+  color: #4d04ea;
 }
 .plan-section .description {
   font-style: normal;
@@ -86,7 +84,7 @@ export default {
   line-height: 39px;
   text-align: center;
   max-width: 800px;
-  color: #ffffff;
+  color: #6b6b6b;
   margin: 10px auto;
 }
 .container {
@@ -107,6 +105,8 @@ export default {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: flex;
+  transition: all 0.35s ease;
+
   flex-direction: column;
   align-items: center;
 }
@@ -142,7 +142,7 @@ export default {
   float: left;
   text-align: center;
   text-decoration: none;
-  background: #d2448d;
+  background: #4d04ea;
   color: #fff;
   box-shadow: none;
   border-radius: 8px;
@@ -159,7 +159,7 @@ export default {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #8145ff;
+  color: #4d04ea;
   text-align: center;
 }
 .list .list-item {
@@ -171,7 +171,7 @@ export default {
 }
 .card-contrast {
   border: 0;
-  background: #4d04ea;
+  background: #f7bd00;
 }
 .card-contrast .card-body .card-subtitle {
   font-size: 16px;
@@ -186,13 +186,14 @@ export default {
   line-height: 22px;
   color: #ffff;
   text-align: center;
+  color: #4d04ea;
 }
 .card-contrast .card-btn a {
   float: left;
   text-align: center;
   text-decoration: none;
   background: #fff;
-  color: #d2448d;
+  color: #4d04ea;
   box-shadow: none;
   border-radius: 8px;
   font-size: 16px;
@@ -201,11 +202,11 @@ export default {
 }
 .card-contrast .card-body .card-text {
   line-height: 20px;
-  color: #fff;
+  color: #4d04ea;
   text-align: center;
 }
 .card-contrast .card-link {
   text-decoration: none;
-  color: white;
+  color: #4d04ea;
 }
 </style>

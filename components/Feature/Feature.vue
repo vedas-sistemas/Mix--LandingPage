@@ -91,16 +91,16 @@ export default {
 .title {
   text-align: center;
   font-style: normal;
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 48px;
+  line-height: 58px;
   text-align: center;
   color: #6b6b6b;
-  max-width: 605px;
+  max-width: 905px;
   margin: 0 auto;
 }
 .title-contrast {
   font-weight: bold;
-  color: #d2448d;
+  color: #4d04ea;
 }
 .headline {
   text-align: center;
@@ -108,7 +108,7 @@ export default {
   font-weight: bold;
 }
 .headline .text-two {
-  color: #d2448d;
+  color: #4d04ea;
 }
 .headline .text-one {
   color: #6b6b6b;

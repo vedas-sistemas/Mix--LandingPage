@@ -38,15 +38,15 @@ export default {
 
 <style>
 .header {
-  background-color: #8145ff;
+  background-color: #4d04ea;
   background-repeat: no-repeat;
 }
 .header-child-btn a {
   float: left;
   text-align: center;
   text-decoration: none;
-  background: #d2448d;
-  color: #fff;
+  background: #f7bd00;
+  color: #4d04ea;
   box-shadow: none;
   border-radius: 8px;
   font-size: 16px;
@@ -74,8 +74,9 @@ export default {
     width: 500px;
   }
   .header-child-title {
-    font-size: 38px;
+    font-size: 48px;
     font-weight: bold;
+    line-height: 58px;
   }
   .header-child-details {
     font-style: normal;
