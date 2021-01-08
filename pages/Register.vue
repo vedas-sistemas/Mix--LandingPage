@@ -107,6 +107,8 @@ export default {
   height: 44px;
   margin-bottom: 16px;
   width: 80%;
+  font-size: 18px;
+  padding: 0 10px;
 }
 
 .input-register:focus {
