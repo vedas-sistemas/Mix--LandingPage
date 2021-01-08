@@ -1,7 +1,7 @@
 <template>
   <div class="header">
-    <div class="header-container">
-      <div class="header-child">
+    <div class="row header-container align-center justify-center space-around">
+      <div class="col-lg-6 col-xs-12 col-sd-12 col-sm-12 col-md-6 header-child">
         <div class="header-child-text">
           <div class="header-child-title">
             <h3>Uma plataforma de delivery completa para seu o seu negócio</h3>
@@ -12,12 +12,14 @@
               economize com aplicativos marketplaces.
             </p>
           </div>
-          <div class="header-child-btn">
-            <a href="#">quero ser parceiro</a>
+          <div class="header-child-btn col-lg-8">
+            <a href="#">Quero ser parceiro</a>
           </div>
         </div>
       </div>
-      <div class="header-child-item">
+      <div
+        class="col-lg-6 col-md-5 col-xs-12 col-sd-12 col-sm-12 header-child-item"
+      >
         <div class="header-child-image">
           <img :src="imageUrl" />
         </div>
@@ -42,58 +44,42 @@ export default {
   background-repeat: no-repeat;
 }
 .header-child-btn a {
-  float: left;
   text-align: center;
   text-decoration: none;
   background: #f7bd00;
   color: #4d04ea;
   box-shadow: none;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 800;
-  padding: 18px 32px 16px;
+  padding: 20px 32px;
+}
+.header-child-btn a:hover {
+  color: #def5f2;
+  background-color: #fac720 !important;
+}
+.header-container {
+  color: #def5f2;
+  padding: 10px 0px;
+}
+.header-child > .header-child-text {
+  margin: 0px 10px;
+}
+.header-child-item {
+  margin: 0;
+  padding: 0;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1490px) {
-  .header-container {
-    color: #def5f2;
-    padding: 40px 80px;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    align-items: center;
-    justify-items: center;
-  }
-  .header-child > .header-child-text {
-    margin: 0px 10px;
-  }
-  .header-child-item {
-    margin: 0;
-    padding: 0;
-  }
-  .header-child-item .header-child-image img {
-    width: 500px;
-  }
-  .header-child-title {
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 58px;
-  }
-  .header-child-details {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 33px;
-    margin: 30px 0px;
-  }
+.header-child-title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 58px;
 }
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
+.header-child-details {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 33px;
+  margin: 30px 0px;
 }
-
-@media all and (min-width: 480px) and (max-width: 768px) {
-}
-
-@media all and (max-width: 480px) {
-}
-/* min-width 1025px, large screens */
 </style>

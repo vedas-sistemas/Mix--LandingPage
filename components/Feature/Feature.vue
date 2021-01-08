@@ -1,17 +1,18 @@
 <template>
   <div class="page-section">
-    <div class="title">
+    <div class="title text-center">
       <h3>
-        Veja como é molezinha o cliente fazer o pedido na sua
+        Veja como é molezinha o cliente fazer <br />
+        o pedido na sua
         <strong class="title-contrast">loja online:</strong>
       </h3>
     </div>
-    <div class="page-section-items">
+    <div class="row justify-center">
       <a
         v-for="(item, index) in icons"
         :key="index"
         href="#"
-        class="item-section"
+        class="item-section col-lg-2 col-md-2 col-sm-12 text-center"
       >
         <div class="page-section-image">
           <img :src="item.icon" />
@@ -61,14 +62,8 @@ export default {
 .page-section {
   padding: 100px 0px;
 }
-.page-section-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-grow: 2;
-  margin: 50px 30px;
-}
-.page-section-items a:hover {
+
+.row a:hover {
   background: #dedbfc;
   -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
   box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
@@ -79,32 +74,20 @@ export default {
   max-width: 150px;
 }
 .item-section {
-  margin: 15px 20px;
-  padding: 40px;
+  margin: 10px 20px;
+  padding: 30px;
   border-radius: 40px;
   border: 1px solid #eff2f6;
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-.title {
-  text-align: center;
-  font-style: normal;
-  font-size: 48px;
-  line-height: 58px;
-  text-align: center;
-  color: #6b6b6b;
-  max-width: 905px;
-  margin: 0 auto;
-}
+
 .title-contrast {
   font-weight: bold;
   color: #4d04ea;
 }
 .headline {
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
 }
 .headline .text-two {

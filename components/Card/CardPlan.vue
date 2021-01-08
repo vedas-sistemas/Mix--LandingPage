@@ -1,19 +1,20 @@
 <template>
   <div class="plan-section">
-    <div class="title">
-      <span>Flexivel e poderoso</span>
+    <div class="title text-center">
+      <h3>Flexivel e poderoso</h3>
     </div>
     <div class="description">
       <span
-        >O suficiente para administrar seus negócios e permanecer dentro do seu
-        orçamento. Escolha um de nossos planos e debute imediatamente</span
+        >O suficiente para administrar seus negócios e permanecer dentro do
+        <br />
+        seu orçamento. Escolha um de nossos planos e debute imediatamente</span
       >
     </div>
-    <div class="container">
+    <div class="row justify-center col-md-12">
       <div
         v-for="(n, index) in 4"
         :key="index"
-        class="card"
+        class="card col-xs-12 col-lg-3 col-md-3"
         :class="index === 2 ? 'card-contrast' : ''"
       >
         <div class="card-image">
@@ -26,20 +27,28 @@
           <div class="card-subtitle">07% sobre as vendas</div>
           <div class="card-text">
             <ul class="list">
-              <li class="list-item">
+              <li class="list-item row" v-for="item in 8" :key="item">
                 <div>
                   <span class="mdi mdi-check"></span>
-                </div>
-                <div>
                   <span> Até 200 pedidos mensais </span>
                 </div>
               </li>
-              <li class="list-item">
+              <li class="list-item row">
                 <div>
                   <span class="mdi mdi-check"></span>
+                  <span> Até 200 pedidos mensais </span>
                 </div>
+              </li>
+              <li class="list-item row">
                 <div>
-                  <span> Coloque no seu domínio “seunegocio.com.br”</span>
+                  <span class="mdi mdi-check"></span>
+                  <span> Até 200 pedidos mensais </span>
+                </div>
+              </li>
+              <li class="list-item row">
+                <div>
+                  <span class="mdi mdi-check"></span>
+                  <span> Até 200 pedidos mensais </span>
                 </div>
               </li>
             </ul>
@@ -66,16 +75,7 @@ export default {
 
 <style>
 .plan-section {
-  background-repeat: no-repeat;
-  padding: 0px 80px;
-}
-.plan-section .title {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 48px;
-  line-height: 58px;
-  text-align: center;
-  color: #4d04ea;
+  padding: 15px 40px;
 }
 .plan-section .description {
   font-style: normal;
@@ -87,41 +87,29 @@ export default {
   color: #6b6b6b;
   margin: 10px auto;
 }
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+
 .card {
-  margin: 15px 10px;
-  padding: 35px;
-  border-radius: 40px;
+  margin: 15px 0px;
+  padding: 30px;
   border: 1px solid #eff2f6;
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: #ffffff;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  display: flex;
   transition: all 0.35s ease;
-
-  flex-direction: column;
-  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 1;
 }
 
 .card-body {
-  margin: 30px 0px;
+  margin: 15px 0px;
 }
 .card .card-body .card-subtitle {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 26px;
   color: #6b6b6b;
   text-align: center;
 }
 .card .card-text .mdi {
-  font-size: 22px;
+  font-size: 20px;
   padding: 0px 10px;
 }
 .card .card-body .card-text {
@@ -171,7 +159,7 @@ export default {
 }
 .card-contrast {
   border: 0;
-  background: #f7bd00;
+  background: #4d04ea;
 }
 .card-contrast .card-body .card-subtitle {
   font-size: 16px;
@@ -186,7 +174,6 @@ export default {
   line-height: 22px;
   color: #ffff;
   text-align: center;
-  color: #4d04ea;
 }
 .card-contrast .card-btn a {
   float: left;
@@ -202,7 +189,7 @@ export default {
 }
 .card-contrast .card-body .card-text {
   line-height: 20px;
-  color: #4d04ea;
+  color: #ffff;
   text-align: center;
 }
 .card-contrast .card-link {

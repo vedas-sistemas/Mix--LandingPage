@@ -1,17 +1,16 @@
 <template>
   <div class="section">
-    <div class="title">
+    <div class="title text-center">
       <h3>
-        O mix se adapta a qualquer <br />
-        tipo de
+        O mix se adapta a qualquer tipo de <br />
         <strong class="title-contrast">delivery</strong>
       </h3>
     </div>
-    <section class="container-categorie">
+    <section class="container-categorie row justify-center">
       <a
         v-for="(item, index) in categories"
         :key="index"
-        class="card-categorie"
+        class="card-categorie col-md-2 col-xs-5"
         href="#"
       >
         <div class="content">
@@ -39,14 +38,11 @@ export default {
 
 <style lang="scss">
 .section {
-  padding: 90px 0px;
+  padding: 30px 0px;
 }
 .container-categorie {
   height: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+
   margin: 50px 0px;
 }
 .container-categorie a {
@@ -64,8 +60,9 @@ export default {
   margin: 10px 15px;
   border-radius: 20px;
   border: 1px solid #eff2f6;
-  padding: 20px;
   .content {
+    padding: 30px 40px;
+
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -76,12 +73,12 @@ export default {
     font-size: 15px;
     line-height: 26px;
     color: #4d04ea;
-    width: 100px;
+    min-width: 100px;
     text-align: center;
   }
   img {
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
     padding: 15px 15px;
     color: red;
   }

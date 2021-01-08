@@ -1,7 +1,7 @@
 <template>
   <div class="test-section">
-    <div class="container">
-      <div class="content">
+    <div class="row align-center justify-center">
+      <div class="content col-lg-6 col-xs-12 col-sd-12 col-sm-12 col-md-5">
         <div class="title">
           <span
             >Comece agora mesmo com um
@@ -15,11 +15,13 @@
             loja, insira os valores de entrega, consulte relatórios analíticos
           </span>
         </div>
-        <div class="btn">
+        <div class="btn col-lg-6">
           <a href="#">Começar agora</a>
         </div>
       </div>
-      <div class="image-animate">
+      <div
+        class="image-animate col-lg-4 col-md-5 col-xs-12 col-sd-12 col-sm-12"
+      >
         <img :src="gifDelivery" />
       </div>
     </div>
@@ -40,27 +42,22 @@ export default {
 
 <style lang="scss">
 .test-section {
-  background-color: white;
+  background-color: #ffffff;
   background-repeat: no-repeat;
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 50px 0px;
-    .image-animate {
-      object-fit: cover;
-    }
-    .image-animate img {
-      width: 500px;
-    }
-    strong {
-      color: #4d04ea;
-    }
+  padding: 20px 0px;
+  .image-animate {
+    object-fit: cover;
+  }
+  .image-animate img {
+    max-width: 500px;
+  }
+  strong {
+    color: #4d04ea;
   }
   .content {
     text-align: left;
-    padding: 20px 110px;
-    max-width: 580px;
+    padding: 20px;
+    margin: 20px 0px;
     .btn a {
       text-align: center;
       text-decoration: none;
@@ -68,9 +65,9 @@ export default {
       color: #fff;
       box-shadow: none;
       border-radius: 8px;
-      font-size: 16px;
+      font-size: 22px;
       font-weight: 800;
-      padding: 18px 32px 16px;
+      padding: 20px 32px;
     }
     .title {
       text-align: left;
