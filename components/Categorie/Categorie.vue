@@ -1,6 +1,6 @@
 <template>
-  <div class="section">
-    <div class="title text-center">
+  <div class="section py-5">
+    <div class="title text-center grey-text">
       <h3>
         O mix se adapta a qualquer tipo de <br />
         <strong class="title-contrast">delivery</strong>
@@ -37,12 +37,8 @@ export default {
 </script>
 
 <style lang="scss">
-.section {
-  padding: 30px 0px;
-}
 .container-categorie {
   height: 100%;
-
   margin: 50px 0px;
 }
 .container-categorie a {

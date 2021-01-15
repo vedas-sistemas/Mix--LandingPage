@@ -1,9 +1,8 @@
 <template>
-  <div class="page-section">
-    <div class="title text-center">
+  <div class="page-section my-5">
+    <div class="title text-center mb-2 grey-text col-md-8 col-xs-12 mx-auto">
       <h3>
-        Veja como é molezinha o cliente fazer <br />
-        o pedido na sua
+        Veja como é molezinha o cliente fazer o pedido na sua
         <strong class="title-contrast">loja online:</strong>
       </h3>
     </div>
@@ -12,7 +11,7 @@
         v-for="(item, index) in icons"
         :key="index"
         href="#"
-        class="item-section col-lg-2 col-md-2 col-sm-12 text-center"
+        class="item-section col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center"
       >
         <div class="page-section-image">
           <img :src="item.icon" />
@@ -59,10 +58,6 @@ export default {
 </script>
 
 <style>
-.page-section {
-  padding: 100px 0px;
-}
-
 .row a:hover {
   background: #dedbfc;
   -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);

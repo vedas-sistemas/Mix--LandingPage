@@ -1,21 +1,20 @@
 <template>
-  <div class="plan-section">
-    <div class="title text-center">
+  <div class="section py-5">
+    <div class="title text-center grey-text">
       <h3>Flexivel e poderoso</h3>
     </div>
-    <div class="description">
+    <div class="subtitle my-3 col-xs-12 col-md-6 col-sm-12 mx-auto text-center">
       <span
-        >O suficiente para administrar seus negócios e permanecer dentro do
-        <br />
-        seu orçamento. Escolha um de nossos planos e debute imediatamente</span
+        >O suficiente para administrar seus negócios e permanecer dentro do seu
+        orçamento. Escolha um de nossos planos e debute imediatamente</span
       >
     </div>
     <div class="row justify-center col-md-12">
       <div
-        v-for="(n, index) in 4"
+        v-for="(n, index) in 3"
         :key="index"
         class="card col-xs-12 col-lg-3 col-md-3"
-        :class="index === 2 ? 'card-contrast' : ''"
+        :class="index === 1 ? 'card-contrast' : ''"
       >
         <div class="card-image">
           <img
@@ -54,8 +53,10 @@
             </ul>
           </div>
         </div>
-        <div class="card-btn"><a href="#">quero ser parceiro</a></div>
-        <div class="card-footer">
+        <div class="card-btn my-3 text-center">
+          <a href="#">quero ser parceiro</a>
+        </div>
+        <div class="card-footer text-center">
           <div><a href="a" class="card-link"> + informações</a></div>
         </div>
       </div>
@@ -74,9 +75,6 @@ export default {
 </script>
 
 <style>
-.plan-section {
-  padding: 15px 40px;
-}
 .plan-section .description {
   font-style: normal;
   font-weight: normal;
@@ -100,7 +98,7 @@ export default {
 }
 
 .card-body {
-  margin: 15px 0px;
+  margin: 50px 0px;
 }
 .card .card-body .card-subtitle {
   font-size: 15px;
@@ -121,13 +119,13 @@ export default {
   list-style: none;
 }
 .card img {
-  max-width: 50px;
+  width: 80px;
 }
 .card .card-link {
   text-decoration: none;
+  text-align: center;
 }
 .card .card-btn a {
-  float: left;
   text-align: center;
   text-decoration: none;
   background: #4d04ea;
@@ -185,7 +183,8 @@ export default {
   border-radius: 8px;
   font-size: 16px;
   font-weight: 800;
-  padding: 18px 32px 16px;
+  padding: 18px 32px;
+  width: 100%;
 }
 .card-contrast .card-body .card-text {
   line-height: 20px;
@@ -195,5 +194,12 @@ export default {
 .card-contrast .card-link {
   text-decoration: none;
   color: #4d04ea;
+}
+.card-footer {
+  padding: 20px 0px;
+}
+.card-image {
+  margin: 0 auto;
+  width: 90px;
 }
 </style>

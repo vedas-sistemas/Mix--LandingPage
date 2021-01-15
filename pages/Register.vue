@@ -66,12 +66,6 @@ export default {
   margin: 0;
   padding: 0;
 }
-.title {
-  font-weight: bold;
-  font-size: 20px;
-  color: #6628ea;
-  padding: 25px 0px;
-}
 
 .register {
   display: grid;
@@ -82,12 +76,6 @@ export default {
 
 .form {
   width: 70%;
-}
-
-.subtitle {
-  font-size: 24px;
-  color: #0e65e5;
-  margin-top: 30px;
 }
 
 .text {

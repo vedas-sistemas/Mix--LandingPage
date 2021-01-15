@@ -1,12 +1,15 @@
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
-   server: {     
-    port: 8000, // default: 3000     
-    host: '0.0.0.0', // default: localhost   
-  },   // other configs 
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0', // default: localhost
+  }, // other configs
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
+    htmlAttrs: {
+      lang: 'pt-br',
+    },
     title: 'Mix--LandingPage',
     meta: [
       { charset: 'utf-8' },
@@ -25,7 +28,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['~/assets/scss/main.scss'],
-  
+
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
 

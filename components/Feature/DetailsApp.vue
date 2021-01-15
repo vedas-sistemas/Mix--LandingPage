@@ -4,17 +4,17 @@
       <div class="row app-container align-center justify-center">
         <div class="col-lg-6 col-xs-12 col-sd-12 col-sm-12 col-md-5 app-child">
           <div class="app-child-text">
-            <div class="title text-left">
+            <div class="title text-left col-lg-8">
               <h3>Comece Agora</h3>
             </div>
-            <div class="app-child-details">
+            <div class="app-child-details col-lg-12">
               <p>
                 Se você tem seu delivery e gasta muito dinheiro com as
                 plataformas, porém você não sabe como começar a economizar, nós
                 vamos te ajudar! A venda direta é a sua solução!
               </p>
             </div>
-            <div class="app-child-btn col-lg-6">
+            <div class="app-child-btn my-5 col-lg-6">
               <a href="#">Quero ser parceiro</a>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default {}
   padding: 20px 32px;
 }
 .app-child-btn a:hover {
-  color: #def5f2;
+  color: #4d04ea;
   background-color: #fac720 !important;
 }
 .app-container {

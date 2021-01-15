@@ -1,9 +1,9 @@
 <template>
-  <div class="header">
+  <div class="section banner">
     <div class="row header-container align-center justify-center space-around">
-      <div class="col-lg-6 col-xs-12 col-sd-12 col-sm-12 col-md-6 header-child">
+      <div class="col-lg-6 col-xs-12 col-sd-12 col-sm-12 col-md-6">
         <div class="header-child-text">
-          <div class="header-child-title">
+          <div class="title white-text">
             <h3>Uma plataforma de delivery completa para seu o seu negócio</h3>
           </div>
           <div class="header-child-details">
@@ -39,10 +39,6 @@ export default {
 </script>
 
 <style>
-.header {
-  background-color: #4d04ea;
-  background-repeat: no-repeat;
-}
 .header-child-btn a {
   text-align: center;
   text-decoration: none;
@@ -50,10 +46,11 @@ export default {
   color: #4d04ea;
   box-shadow: none;
   border-radius: 8px;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 800;
-  padding: 20px 32px;
+  padding: 18px 30px;
 }
+
 .header-child-btn a:hover {
   color: #def5f2;
   background-color: #fac720 !important;
@@ -69,11 +66,8 @@ export default {
   margin: 0;
   padding: 0;
 }
-
-.header-child-title {
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 58px;
+.header-child-image {
+  padding: 30px;
 }
 .header-child-details {
   font-style: normal;

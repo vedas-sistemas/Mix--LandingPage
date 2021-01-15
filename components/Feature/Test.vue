@@ -2,13 +2,13 @@
   <div class="test-section">
     <div class="row align-center justify-center">
       <div class="content col-lg-6 col-xs-12 col-sd-12 col-sm-12 col-md-5">
-        <div class="title">
+        <div class="title grey-text col-lg-6">
           <span
             >Comece agora mesmo com um
             <strong>teste grátis</strong>
           </span>
         </div>
-        <div class="description">
+        <div class="description col-lg-12">
           <span
             >Cadastre seus produtos, horários de funcionamento, formas de
             pagamento, consulte avaliações de seus clientes, personalize sua
@@ -69,17 +69,11 @@ export default {
       font-weight: 800;
       padding: 20px 32px;
     }
-    .title {
-      text-align: left;
-      font-style: normal;
-      font-size: 48px;
-      line-height: 58px;
-    }
+
     .description {
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
-      color: f7bd00;
       margin: 40px 0px;
     }
   }
