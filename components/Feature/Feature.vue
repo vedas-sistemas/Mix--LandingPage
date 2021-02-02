@@ -78,7 +78,7 @@ export default {
 
 .title-contrast {
   font-weight: bold;
-  color: #4d04ea;
+  color: #0b10fd;
 }
 .headline {
   text-align: center;
@@ -86,7 +86,7 @@ export default {
   font-weight: bold;
 }
 .headline .text-two {
-  color: #4d04ea;
+  color: #0b10fd;
 }
 .headline .text-one {
   color: #6b6b6b;

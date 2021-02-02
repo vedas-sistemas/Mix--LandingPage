@@ -1,4 +1,5 @@
 export default {
+  logo: require('@/assets/images/logo/logo.svg'),
   categories: [
     {
       id: 1,
@@ -77,6 +78,17 @@ export default {
       id: 1,
       title: 'delivery animation',
       image: require('@/assets/images/feature/delivery-animation.gif'),
+    },
+  ],
+  plans: [
+    {
+      image: require('@/assets/images/plans/light.svg'),
+    },
+    {
+      image: require('@/assets/images/plans/lighting.svg'),
+    },
+    {
+      image: require('@/assets/images/plans/message.svg'),
     },
   ],
 }

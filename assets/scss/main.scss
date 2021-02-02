@@ -18,7 +18,7 @@ a {
   color: base.$grey;
 }
 .banner {
-  background-image: base.$background-banner;
+  background: linear-gradient(-45deg, #9300dc 20%, #4144e8 70%);
 }
 .mx-auto {
   margin: 0 auto;
@@ -50,6 +50,21 @@ a {
 }
 .mt-5 {
   margin-top: 50px;
+}
+.mr-1 {
+  margin-right: 10px;
+}
+.mr-2 {
+  margin-right: 20px;
+}
+.mr-3 {
+  margin-right: 30px;
+}
+.mr-4 {
+  margin-right: 40px;
+}
+.mr-5 {
+  margin-right: 50px;
 }
 .mb-1 {
   margin-bottom: 10px;
@@ -138,13 +153,36 @@ a {
 .py-5 {
   padding: 30px 0px !important;
 }
+.px-0 {
+  padding: 0px 0px;
+}
+.px-1 {
+  padding: 0px 5px;
+}
+.px-2 {
+  padding: 0px 10px;
+}
+.px-3 {
+  padding: 0px 15px;
+}
+.px-4 {
+  padding: 0px 20px;
+}
+.px-5 {
+  padding: 0px 30px !important;
+}
 
 /* max width 1400px */
 .max-width {
   max-width: 1400px;
   margin: 0 auto;
 }
-
+.red {
+  background-color: red;
+}
+.green {
+  background-color: #21e641;
+}
 /* row class to be used when using col-*-* */
 .row {
   display: flex;
@@ -283,9 +321,9 @@ $col-width: 8.333333333333333%; /* 1 Column Width = 100% / 12 */
 @media screen and (min-width: 1400px) {
   /* Column Width lg */
   .title {
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-weight: bold;
-    line-height: 58px;
+    line-height: 88px;
   }
   .subtitle {
     font-size: 18px;
@@ -676,5 +714,8 @@ $col-width: 8.333333333333333%; /* 1 Column Width = 100% / 12 */
   }
   .section {
     padding-top: 90px;
+  }
+  .card.card-contrast {
+    margin: 15px 0px;
   }
 }

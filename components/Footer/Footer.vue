@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div class="wrapper row space-between align">
+    <div class="wrapper banner row space-between align">
       <div class="col-md-3 col-lg-3 col-xs-12">
         <div class="brand">
           <h3 class="title-nav">mix | delivery</h3>
@@ -98,7 +98,6 @@ export default {}
 .footer {
   .wrapper {
     padding: 70px 30px;
-    background-color: #4d04ea;
     color: white;
     margin-top: 50px;
   }

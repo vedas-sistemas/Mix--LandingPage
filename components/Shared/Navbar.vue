@@ -16,8 +16,15 @@
     </div>
     <div class="topnav" id="myTopnav">
       <div class="row space-between align-center responsive">
-        <div class="col-md-4 col-lg-5 col-xs-2 title-nav">
-          <span>Mix</span>
+        <div class="col-md-4 col-lg-5 col-xs-6">
+          <div class="row align-center justify-start px-3">
+            <div class="logo mr-1">
+              <img :src="logo" />
+            </div>
+            <div class="title-nav">
+              <span> <strong>Mix</strong>entregas</span>
+            </div>
+          </div>
         </div>
         <div class="col-lg-7 col-md-8 col-xs-1 nav-items">
           <a href="#Home" class="nav-item">home</a>
@@ -46,7 +53,13 @@
   </div>
 </template>
 <script>
+import logo from '@/assets/index.js'
 export default {
+  data() {
+    return {
+      logo: logo.logo,
+    }
+  },
   methods: {
     openMenu() {
       document.getElementById('myNav').style.width = '100%'
@@ -59,7 +72,7 @@ export default {
 </script>
 <style lang="scss">
 .topnav {
-  background: linear-gradient(-45deg, #4d04ea 20%, #4d04ea 70%);
+  background: linear-gradient(-45deg, #9300dc 20%, #4144e8 70%);
   background-repeat: no-repeat;
   padding: 10px 10px;
   overflow: hidden;
@@ -67,6 +80,11 @@ export default {
   .title-nav {
     font-size: 28px;
     color: #def5f2;
+    max-width: 180px;
+  }
+  .logo {
+    width: 40px;
+    padding: 5px;
   }
   .nav-item {
     margin: 0px 10px;
@@ -80,14 +98,14 @@ export default {
   }
   .nav-item:hover {
     color: #def5f2;
-    background-color: #fac720 !important;
+    background-color: #fff !important;
     border-radius: 8px;
   }
   .nav-item-btn {
     text-align: center;
     text-decoration: none;
-    background: #f7bd00;
-    color: #4d04ea;
+    background: #ffff;
+    color: #0b10fd;
     box-shadow: none;
     border-radius: 8px;
     font-size: 16px;
@@ -151,7 +169,7 @@ export default {
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  background: linear-gradient(-45deg, #4d04ea 20%, #4d04ea 70%);
+  background: linear-gradient(-45deg, #0b10fd 20%, #0b10fd 70%);
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }

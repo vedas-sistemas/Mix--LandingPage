@@ -55,9 +55,11 @@ export default {
   margin: auto 0;
   margin: 10px 15px;
   border-radius: 20px;
+  padding: 30px;
+
   border: 1px solid #eff2f6;
   .content {
-    padding: 30px 40px;
+    padding: 30px;
 
     display: flex;
     flex-direction: column;
@@ -68,7 +70,7 @@ export default {
     font-style: normal;
     font-size: 15px;
     line-height: 26px;
-    color: #4d04ea;
+    color: #0b10fd;
     min-width: 100px;
     text-align: center;
   }

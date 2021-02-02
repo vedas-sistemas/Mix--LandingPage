@@ -43,7 +43,7 @@ export default {
   text-align: center;
   text-decoration: none;
   background: #f7bd00;
-  color: #4d04ea;
+  color: #0b10fd;
   box-shadow: none;
   border-radius: 8px;
   font-size: 16px;
@@ -53,7 +53,7 @@ export default {
 
 .header-child-btn a:hover {
   color: #def5f2;
-  background-color: #fac720 !important;
+  background-color: #fff !important;
 }
 .header-container {
   color: #def5f2;

@@ -1,22 +1,19 @@
 <template>
   <div class="test-section">
     <div class="row align-center justify-center">
-      <div class="content col-lg-6 col-xs-12 col-sd-12 col-sm-12 col-md-5">
-        <div class="title grey-text col-lg-6">
-          <span
-            >Comece agora mesmo com um
-            <strong>teste grátis</strong>
-          </span>
+      <div class="content col-lg-5 col-xs-12 col-sd-12 col-sm-12 col-md-5">
+        <div class="title grey-text">
+          <h3>Comece agora <strong>gratuitamente</strong></h3>
         </div>
-        <div class="description col-lg-12">
+        <div class="description">
           <span
             >Cadastre seus produtos, horários de funcionamento, formas de
             pagamento, consulte avaliações de seus clientes, personalize sua
             loja, insira os valores de entrega, consulte relatórios analíticos
           </span>
         </div>
-        <div class="btn col-lg-6">
-          <a href="#">Começar agora</a>
+        <div class="btn">
+          <a href="#">Vamos lá!</a>
         </div>
       </div>
       <div
@@ -52,22 +49,22 @@ export default {
     max-width: 500px;
   }
   strong {
-    color: #4d04ea;
+    color: #0b10fd;
   }
   .content {
     text-align: left;
-    padding: 20px;
-    margin: 20px 0px;
+    margin: 0px 0px;
     .btn a {
       text-align: center;
       text-decoration: none;
-      background: #f7bd00;
+      background: #0b10fd;
       color: #fff;
       box-shadow: none;
       border-radius: 8px;
-      font-size: 22px;
+      font-size: 16px;
+      width: 100%;
       font-weight: 800;
-      padding: 20px 32px;
+      padding: 18px 42px;
     }
 
     .description {

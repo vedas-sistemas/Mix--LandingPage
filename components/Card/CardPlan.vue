@@ -9,55 +9,34 @@
         orçamento. Escolha um de nossos planos e debute imediatamente</span
       >
     </div>
-    <div class="row justify-center col-md-12">
+    <div class="row justify-center col-md-12 col-xs-12 col-sm-12">
       <div
-        v-for="(n, index) in 3"
+        v-for="(item, index) in plans"
         :key="index"
         class="card col-xs-12 col-lg-3 col-md-3"
         :class="index === 1 ? 'card-contrast' : ''"
       >
         <div class="card-image">
-          <img
-            src="https://www.flaticon.com/svg/static/icons/svg/3529/3529890.svg"
-          />
+          <img :src="item.image" />
         </div>
         <div class="card-body">
-          <div class="card-title">Plano mensal</div>
-          <div class="card-subtitle">07% sobre as vendas</div>
+          <div class="card-title" v-text="item.title"></div>
+          <div class="card-subtitle" v-text="item.description">
+            07% sobre as vendas
+          </div>
           <div class="card-text">
             <ul class="list">
-              <li class="list-item row" v-for="item in 8" :key="item">
+              <li class="list-item row" v-for="value in item.stack" :key="item">
                 <div>
                   <span class="mdi mdi-check"></span>
-                  <span> Até 200 pedidos mensais </span>
-                </div>
-              </li>
-              <li class="list-item row">
-                <div>
-                  <span class="mdi mdi-check"></span>
-                  <span> Até 200 pedidos mensais </span>
-                </div>
-              </li>
-              <li class="list-item row">
-                <div>
-                  <span class="mdi mdi-check"></span>
-                  <span> Até 200 pedidos mensais </span>
-                </div>
-              </li>
-              <li class="list-item row">
-                <div>
-                  <span class="mdi mdi-check"></span>
-                  <span> Até 200 pedidos mensais </span>
+                  <span v-text="value"> </span>
                 </div>
               </li>
             </ul>
           </div>
         </div>
         <div class="card-btn my-3 text-center">
-          <a href="#">quero ser parceiro</a>
-        </div>
-        <div class="card-footer text-center">
-          <div><a href="a" class="card-link"> + informações</a></div>
+          <a href="#" v-text="item.button"></a>
         </div>
       </div>
     </div>
@@ -69,6 +48,47 @@ export default {
   data() {
     return {
       cardContrast: true,
+      plans: [
+        {
+          title: 'Plano Iniciante',
+          description: 'Sem mensalidade',
+          price: 'R$ 0,00',
+          button: 'Comece grátis',
+          image: require('@/assets/images/plans/light.svg'),
+          stack: [
+            '200 pedidos mensais',
+            'Produtos ilimitados',
+            'Limite $2000,00 em vendas',
+            '1 promoção ativa',
+          ],
+        },
+        {
+          title: 'Plano Turbo',
+          description: 'Sem mensalidade',
+          price: 'R$ 0,00',
+          button: 'Turbinar vendas',
+          image: require('@/assets/images/plans/lighting.svg'),
+          stack: [
+            '500 pedidos mensais',
+            'Produtos ilimitados',
+            'Limite $8000,00 em vendas',
+            '5 promoções ativa',
+          ],
+        },
+        {
+          title: 'Plano Comercial',
+          description: 'Sem mensalidade',
+          price: 'R$ 0,00',
+          button: 'Comece agora',
+          image: require('@/assets/images/plans/message.svg'),
+          stack: [
+            'Pedidos ilimitados',
+            'Produtos ilimitados',
+            'Sem Limite de vendas',
+            'Crie promoções ilimitadas',
+          ],
+        },
+      ],
     }
   },
 }
@@ -95,10 +115,12 @@ export default {
   transition: all 0.35s ease;
   flex-shrink: 0;
   flex-grow: 1;
+  border-radius: 20px 20px;
+  margin: 0 10px;
 }
 
 .card-body {
-  margin: 50px 0px;
+  margin: 20px 0px;
 }
 .card .card-body .card-subtitle {
   font-size: 15px;
@@ -114,12 +136,13 @@ export default {
   line-height: 20px;
   color: #6b6b6b;
   text-align: center;
+  margin: 30px 0px;
 }
 .card ul li {
   list-style: none;
 }
 .card img {
-  width: 80px;
+  width: 90px;
 }
 .card .card-link {
   text-decoration: none;
@@ -128,13 +151,15 @@ export default {
 .card .card-btn a {
   text-align: center;
   text-decoration: none;
-  background: #4d04ea;
+  background: #0b10fd;
   color: #fff;
   box-shadow: none;
   border-radius: 8px;
   font-size: 16px;
+  width: 100%;
+  display: block;
   font-weight: 800;
-  padding: 18px 32px 16px;
+  padding: 18px 42px;
 }
 .card-btn {
   margin: 15px 0px;
@@ -145,7 +170,7 @@ export default {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #4d04ea;
+  color: #0b10fd;
   text-align: center;
 }
 .list .list-item {
@@ -157,7 +182,7 @@ export default {
 }
 .card-contrast {
   border: 0;
-  background: #4d04ea;
+  background: linear-gradient(-45deg, #4144e8 20%, #9300dc 70%);
 }
 .card-contrast .card-body .card-subtitle {
   font-size: 16px;
@@ -174,16 +199,15 @@ export default {
   text-align: center;
 }
 .card-contrast .card-btn a {
-  float: left;
   text-align: center;
   text-decoration: none;
   background: #fff;
-  color: #4d04ea;
-  box-shadow: none;
+  color: #0b10fd;
+  box-shadow: black;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 800;
-  padding: 18px 32px;
+  padding: 15px 52px;
   width: 100%;
 }
 .card-contrast .card-body .card-text {
@@ -193,7 +217,7 @@ export default {
 }
 .card-contrast .card-link {
   text-decoration: none;
-  color: #4d04ea;
+  color: #0b10fd;
 }
 .card-footer {
   padding: 20px 0px;
