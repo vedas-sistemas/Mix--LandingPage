@@ -48,10 +48,11 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     'nuxtjs-mdi-font',
+    '@neneos/nuxt-animate.css',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: { baseURL: 'https://server.mixentregas.com.br' },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
