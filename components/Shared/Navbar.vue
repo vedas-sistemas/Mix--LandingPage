@@ -18,19 +18,17 @@
       <div class="row space-between align-center responsive">
         <div class="col-md-4 col-lg-5 col-xs-6">
           <div class="row align-center justify-start px-3">
-            <div class="logo mr-1">
+            <div class="logo-menu mr-1">
               <img :src="logo" />
             </div>
-            <div class="title-nav">
-              <span> <strong>Mix</strong>entregas</span>
-            </div>
+            <div class="title-nav"></div>
           </div>
         </div>
         <div class="col-lg-7 col-md-8 col-xs-1 nav-items">
-          <a href="#Home" class="nav-item">home</a>
-          <a href="#news" class="nav-item">sobre</a>
-          <a href="#contact" class="nav-item">dúvidas</a>
-          <NuxtLink class="nav-item-btn" to="/register"
+          <a href="#Home" class="nav-item">Home</a>
+          <a href="#news" class="nav-item">Sobre</a>
+          <a href="#contact" class="nav-item">Dúvidas</a>
+          <NuxtLink class="nav-item-btn" to="/cadastrar"
             >Quero ser parceiro</NuxtLink
           >
           <a href="#" class="nav-item-icon">
@@ -57,7 +55,7 @@ import logo from '@/assets/index.js'
 export default {
   data() {
     return {
-      logo: logo.logo,
+      logo: logo.logo_menu,
     }
   },
   methods: {
@@ -77,6 +75,7 @@ export default {
   padding: 10px 10px;
   overflow: hidden;
   position: fixed;
+  z-index: 3;
   .title-nav {
     font-size: 28px;
     color: #def5f2;
@@ -205,7 +204,9 @@ export default {
   right: 45px;
   font-size: 40px;
 }
-
+.logo-menu {
+  width: 120px;
+}
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
   .overlay a {

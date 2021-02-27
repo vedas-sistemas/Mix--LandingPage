@@ -7,7 +7,7 @@
       </h3>
     </div>
     <section class="container-categorie row justify-center">
-      <a
+      <div
         v-for="(item, index) in categories"
         :key="index"
         class="card-categorie col-md-2 col-xs-5"
@@ -17,7 +17,7 @@
           <img class="logo" :src="item.image" alt="categorie" />
           <span class="categorie-title" v-text="item.title"></span>
         </div>
-      </a>
+      </div>
     </section>
   </div>
 </template>
@@ -44,11 +44,11 @@ export default {
 .container-categorie a {
   text-decoration: none;
 }
-.container-categorie a:hover {
+.card-categorie:hover {
   background: #dedbfc;
-  -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
-  box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
   color: #6b6b6b, 100%;
+  border: 0;
+  -webkit-transform: scale(1.05);
 }
 .card-categorie {
   transition: all 0.35s ease;
@@ -56,7 +56,7 @@ export default {
   margin: 10px 15px;
   border-radius: 20px;
   padding: 30px;
-
+  cursor: pointer;
   border: 1px solid #eff2f6;
   .content {
     padding: 30px;

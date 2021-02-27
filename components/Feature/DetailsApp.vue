@@ -1,7 +1,7 @@
 <template>
   <div class="test-section">
     <div class="row align-center justify-center">
-      <div class="content col-lg-6 col-xs-12 col-sd-12 col-sm-12 col-md-5">
+      <div class="content col-lg-5 col-xs-12 col-sd-12 col-sm-12 col-md-5">
         <div class="title grey-text">
           <h3>Comece Agora</h3>
         </div>
@@ -12,8 +12,10 @@
             A venda direta é a sua solução!
           </span>
         </div>
-        <div class="btn col-lg-6">
-          <a href="#">Quero ser parceiro</a>
+        <div class="col-lg-6">
+          <button class="btn btn-primary ripple" href="#">
+            Quero ser parceiro
+          </button>
         </div>
       </div>
       <div

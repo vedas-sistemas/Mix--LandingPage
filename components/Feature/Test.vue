@@ -3,7 +3,7 @@
     <div class="row align-center justify-center">
       <div class="content col-lg-5 col-xs-12 col-sd-12 col-sm-12 col-md-5">
         <div class="title grey-text">
-          <h3>Comece agora <strong>gratuitamente</strong></h3>
+          <h4>Comece agora <strong>gratuitamente</strong></h4>
         </div>
         <div class="description">
           <span
@@ -12,8 +12,8 @@
             loja, insira os valores de entrega, consulte relatórios analíticos
           </span>
         </div>
-        <div class="btn">
-          <a href="#">Vamos lá!</a>
+        <div class="col-lg-6">
+          <button class="btn btn-primary" href="#">Vamos lá!</button>
         </div>
       </div>
       <div
@@ -54,25 +54,6 @@ export default {
   .content {
     text-align: left;
     margin: 0px 0px;
-    .btn a {
-      text-align: center;
-      text-decoration: none;
-      background: #0b10fd;
-      color: #fff;
-      box-shadow: none;
-      border-radius: 8px;
-      font-size: 16px;
-      width: 100%;
-      font-weight: 800;
-      padding: 18px 42px;
-    }
-
-    .description {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      margin: 40px 0px;
-    }
   }
 }
 </style>
