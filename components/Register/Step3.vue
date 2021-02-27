@@ -1,0 +1,95 @@
+<template>
+  <div class="d-flex collunm align-center">
+    <div class="px-3 pt-3">
+      <div class="logo-form">
+        <img width="100" height="50px" :src="logo" />
+      </div>
+      <div class="display-1">Informações sobre a empresa</div>
+      <div class="text">Agora precisamos do endereço seu negócio</div>
+      <form @submit.prevent="getAddressByString" class="form my-5">
+        <div class="group">
+          <input id="name" v-model="address.street" type="text" required />
+          <label for="name">Rua</label>
+        </div>
+        <div class="group">
+          <input id="name" v-model="address.number" type="text" required />
+          <label for="name">Número</label>
+        </div>
+        <div class="group">
+          <input id="name" v-model="address.district" type="text" required />
+          <label for="name">Bairro</label>
+        </div>
+        <div class="group">
+          <input id="name" v-model="address.city" type="text" required />
+          <label for="name">Cidade</label>
+        </div>
+        <div class="group">
+          <input id="name" v-model="address.state" type="text" required />
+          <label for="name">Estado</label>
+        </div>
+        <button class="btn btn-primary">Confirmar dados</button>
+      </form>
+    </div>
+  </div>
+</template>
+
+<script>
+import logo from '@/assets/index.js'
+import { characterRemove } from '@/mixins/global.js'
+
+export default {
+  data() {
+    return {
+      firstImage: require('~/assets/images/register/image-1.png'),
+      logo: logo.logo,
+      address: {
+        title: 'Minha Empresa',
+        state: 'Mato Grosso',
+        city: 'Sinop',
+        district: 'Setor Comercial',
+        street: 'Rua amendoeiras',
+        number: '49',
+        cep: '',
+        country: 'Brasil',
+        complement: 'm',
+      },
+    }
+  },
+  computed: {
+    user() {
+      return this.$store.state.user
+    },
+  },
+  methods: {
+    getAddressByString() {
+      this.loading = true
+      this.$store
+        .dispatch('request', {
+          method: '$post',
+          url: '/coord-address',
+          data: {
+            address: `${characterRemove(this.address.street)}, ${
+              this.address.number
+            },${characterRemove(this.address.district)}`,
+          },
+        })
+        .then((resp) => {
+          const user = {
+            ...this.user,
+            address: resp,
+            user_cpanel: true,
+            adm: 'S',
+          }
+          this.$store.commit('setState', ['user', user])
+          this.$router.push('/cadastrar/plano')
+          this.$root.$emit('slide-next')
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    },
+  },
+}
+</script>
+
+<style></style>

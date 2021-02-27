@@ -1,9 +1,15 @@
 <template>
-  <div class="row colunm fill-height"><NuxtChild /></div>
+  <div>
+    <main>
+      <Step />
+    </main>
+  </div>
 </template>
-
 <script>
 export default {
+  layout: 'register',
+  transition: '',
+
   data() {
     return {
       firstImage: require('~/assets/images/register/first.svg'),
@@ -17,17 +23,7 @@ export default {
   },
 }
 </script>
-
 <style>
-.info-container {
-  background: #6628ea;
-  width: 100%;
-  padding-top: 60px;
-  color: #d7e9ff;
-  display: flex;
-  justify-content: center;
-}
-
 .info-content {
   width: 70%;
 }
