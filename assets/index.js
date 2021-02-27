@@ -1,5 +1,6 @@
 export default {
   logo: require('@/assets/images/logo/logo.svg'),
+  logo_menu: require('@/assets/images/logo/logo-menu.svg'),
   categories: [
     {
       id: 1,
