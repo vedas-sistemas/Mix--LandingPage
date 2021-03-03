@@ -1,9 +1,15 @@
 <template>
-  <div>
+  <div class="bg-light">
     <Navbar />
-    <Nuxt />
-    <Footer />
+    <div><Nuxt /></div>
+    <div class="bg-theme">
+      <Footer />
+    </div>
   </div>
 </template>
 
-<style></style>
+<style>
+::-webkit-scrollbar {
+  display: none;
+}
+</style>
