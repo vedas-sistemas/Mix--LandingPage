@@ -7,7 +7,7 @@
       <hooper
         ref="carousel"
         :settings="hooperSettings"
-        class="info-step-1 row justify-center align-flex-end col-md-7 col-lg-7"
+        class="bg-theme row justify-center align-flex-end col-md-7 col-lg-7"
       >
         <slide>
           <div class="slide-content">
@@ -82,7 +82,7 @@
             </div>
             <div class="card-text px-5">
               <div>
-                <span class="display-1"
+                <span class="display-2"
                   >Todas as funcionalidades do pacote:</span
                 >
               </div>
@@ -155,7 +155,6 @@ export default {
       switch (value) {
         case 'cadastrar':
           this.$refs.carousel.slideTo(0)
-          console.log(value)
 
           break
         case 'cadastrar-empresa':
@@ -191,11 +190,7 @@ export default {
   font-size: 120%;
   width: 70%;
 }
-.info-step-1 {
-  background-color: #6628ea;
-  color: white;
-  height: 100vh;
-}
+
 .info-text {
   margin-top: 15px;
   margin-bottom: 20px;
