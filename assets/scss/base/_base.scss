@@ -26,12 +26,103 @@ $green: #28a745 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
-$primary-color: #5e72e4 !default;
-$info-color: #11cdef !default;
-$success-color: #2dce89 !default;
-$danger-color: #f5365c !default;
-$warning-color: #fb6340 !default;
-$page-theme-primary: #9300dc !default;
+$primary: #6628ea !default;
+$info: #11cdef !default;
+$secondary: $gray-600 !default;
+$success: #2dce89 !default;
+$danger: #f5365c !default;
+$warning: #fb6340 !default;
+$page-theme-primary: #f1f2f8 !default;
 $button-gradient: linear-gradient(-45deg, #9300dc 20%, #4144e8 70%);
-
+$shape-height-xl: 1.5 !default;
+$shape-height-lg: 1.5 !default;
+$shape-height-sm: 1.5 !default;
 $background-banner: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='631' preserveAspectRatio='none' viewBox='0 0 1440 631'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1159%26quot%3b)' fill='none'%3e%3crect width='1440' height='631' x='0' y='0' fill='rgba(77%2c 4%2c 234%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c422.11C97.694%2c422.434%2c194.204%2c478.208%2c286.207%2c445.347C386.251%2c409.614%2c465.572%2c328.882%2c518.656%2c236.862C574.812%2c139.517%2c625.187%2c22.292%2c592.239%2c-85.151C559.762%2c-191.059%2c440.359%2c-238.024%2c352.387%2c-305.345C281.987%2c-359.219%2c211.21%2c-406.237%2c129.075%2c-439.589C38.565%2c-476.342%2c-54.528%2c-532.02%2c-149.498%2c-509.143C-245.386%2c-486.045%2c-306.744%2c-396.234%2c-368.882%2c-319.638C-429.245%2c-245.231%2c-485.211%2c-166.43%2c-503.779%2c-72.433C-522.949%2c24.608%2c-513.484%2c125.797%2c-474.863%2c216.862C-435.593%2c309.458%2c-377.314%2c403.547%2c-284.99%2c443.452C-195.738%2c482.029%2c-97.231%2c421.787%2c0%2c422.11' fill='%234904de'%3e%3c/path%3e%3cpath d='M1440 1157.9099999999999C1537.728 1156.6770000000001 1628.788 1102.353 1699.687 1035.08 1763.809 974.2370000000001 1782.943 884.625 1814.88 802.202 1844.833 724.899 1884.837 650.426 1880.818 567.62 1876.574 480.172 1840.511 398.918 1791.777 326.184 1738.039 245.98200000000003 1677.989 162.47000000000003 1587.257 129.488 1494.53 95.78099999999995 1391.261 115.08399999999995 1297.77 146.608 1206.766 177.293 1115.008 223.969 1064.604 305.717 1016.627 383.529 1047.886 482.269 1035.007 572.771 1022.153 663.098 962.722 749.593 989.005 836.962 1016.185 927.3109999999999 1099.1979999999999 986.979 1176.069 1041.684 1256.01 1098.5729999999999 1341.891 1159.147 1440 1157.9099999999999' fill='%235104f6'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1159'%3e%3crect width='1440' height='631' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+// Buttons + Forms
+$shape-height-base: 1.5 !default;
+$component-active-color: $white !default;
+$component-active-bg: theme-color('primary') !default;
+$component-active-border-color: theme-color('primary') !default;
+$input-btn-padding-y: 0.625rem !default;
+$input-btn-padding-x: 0.75rem !default;
+$input-btn-line-height: $shape-height-base !default;
+
+$input-btn-focus-width: 0 !default;
+//$input-btn-focus-box-shadow:  0 4px 10px 0 rgba(0, 0, 0, 0.04);
+$input-btn-focus-box-shadow: none !default;
+
+$input-btn-padding-y-sm: 0.25rem !default;
+$input-btn-padding-x-sm: 0.5rem !default;
+$input-btn-line-height-sm: $shape-height-sm !default;
+
+$input-btn-padding-y-lg: 0.875rem !default;
+$input-btn-padding-x-lg: 1rem !default;
+$input-btn-line-height-lg: $shape-height-lg !default;
+
+$input-btn-border-width: 1px !default;
+
+$input-btn-font-size-sm: 0.75rem !default;
+$input-btn-font-size: 0.875rem !default;
+$input-btn-font-size-lg: 0.875rem !default;
+
+// Buttons
+
+$btn-padding-y: $input-btn-padding-y !default;
+$btn-padding-x: $input-btn-padding-x + 0.5 !default;
+$btn-line-height: $input-btn-line-height !default;
+
+$btn-padding-y-sm: $input-btn-padding-y-sm !default;
+$btn-padding-x-sm: $input-btn-padding-x-sm !default;
+$btn-line-height-sm: $input-btn-line-height-sm !default;
+
+$btn-padding-y-lg: $input-btn-padding-y-lg !default;
+$btn-padding-x-lg: $input-btn-padding-x-lg !default;
+$btn-line-height-lg: $input-btn-line-height-lg !default;
+
+$btn-border-width: $input-btn-border-width !default;
+
+$btn-font-weight: 600 !default;
+$btn-text-transform: uppercase !default;
+$btn-letter-spacing: 0.025em !default;
+$btn-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+$btn-hover-box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+  0 3px 6px rgba(0, 0, 0, 0.08);
+$btn-focus-box-shadow: $btn-hover-box-shadow !default;
+$btn-focus-width: $input-btn-focus-width !default;
+
+$btn-active-box-shadow: none !default;
+
+// Forms
+$base-color: #727272;
+
+$base-time: 200ms;
+
+$app-background-color: #82dfff;
+$app-padding: 2rem;
+
+$accordion-background-color: #ffffff;
+$accordion-padding: 2rem 1rem;
+$accordion-border-radius: 0.5rem;
+$accordion-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+
+$accordion-header-font-size: 1.2rem;
+$accordion-header-height: 2rem;
+$accordion-header-padding: 0.5rem 0.5rem;
+$accordion-header-border-radius: 0.6rem;
+$accordion-header-transition: background-color $base-time ease-in-out;
+
+$accordion-header-hover-background-color: #efefef;
+
+$accordion-caret-color: $base-color;
+$accordion-caret-background-image: linear-gradient(
+  to top right,
+  transparent 50%,
+  $accordion-caret-color 50%
+);
+$accordion-caret-width: 0.5rem;
+$accordion-caret-height: 0.5rem;
+$accordion-caret-transform: rotate(-45deg);
+$accordion-caret-transforming: scale(1.5) rotate(45deg);
+$accordion-caret-active-transform: rotate(135deg);
+
+$accordion-body-content-padding: 1rem;
