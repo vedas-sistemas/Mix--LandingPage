@@ -74,7 +74,7 @@ export default {
     text-align: center;
     text-decoration: none;
     background: #ffff;
-    color: #0b10fd;
+    color: #6628ea;
     box-shadow: none;
     border-radius: 8px;
     font-size: 16px;
@@ -138,7 +138,7 @@ export default {
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  background: linear-gradient(-45deg, #0b10fd 20%, #0b10fd 70%);
+  background: linear-gradient(-45deg, #6628ea 20%, #6628ea 70%);
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }

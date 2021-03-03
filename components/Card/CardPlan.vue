@@ -1,31 +1,37 @@
 <template>
-  <div class="section py-5">
+  <div class="section py-5 my-5">
     <div class="title text-center grey-text">
-      <h3>Flexivel e poderoso</h3>
+      <span class="display-3">Flexível e poderoso</span>
     </div>
     <div class="subtitle my-3 col-xs-12 col-md-6 col-sm-12 mx-auto text-center">
-      <span
-        >O suficiente para administrar seus negócios e permanecer dentro do seu
-        orçamento. Escolha um de nossos planos e debute imediatamente</span
-      >
+      <p>
+        O suficiente para administrar seus negócios e permanecer dentro do seu
+        orçamento. Escolha um de nossos planos e debute imediatamente
+      </p>
     </div>
     <div class="row justify-center col-md-12 col-xs-12 col-sm-12">
       <div
         v-for="(item, index) in plans"
         :key="index"
-        class="card col-xs-12 col-lg-3 col-md-3"
+        class="card card-hover mx-2 col-xs-12 col-lg-3 col-md-3"
       >
         <div class="card-image">
           <img :src="item.image" />
         </div>
         <div class="card-body">
-          <div class="card-title" v-text="item.title"></div>
+          <div class="text-primary text-center">
+            <h5 class="font-weight-bold" v-text="item.title"></h5>
+          </div>
           <div class="card-subtitle" v-text="item.description">
             07% sobre as vendas
           </div>
           <div class="card-text">
             <ul class="list">
-              <li class="list-item row" v-for="value in item.stack" :key="item">
+              <li
+                class="list-item row"
+                v-for="(value, index) in item.stack"
+                :key="index"
+              >
                 <div>
                   <span class="mdi mdi-check"></span>
                   <span v-text="value"> </span>
@@ -34,8 +40,8 @@
             </ul>
           </div>
         </div>
-        <div class="my-3 text-center">
-          <button class="btn ripple btn-primary" v-text="item.button"></button>
+        <div class="my-3 px-3 text-center">
+          <button class="btn btn-lg btn-primary" v-text="item.button"></button>
         </div>
       </div>
     </div>

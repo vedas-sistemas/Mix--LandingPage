@@ -1,9 +1,9 @@
 <template>
   <div class="page-section my-5">
-    <div class="title text-center mb-2 grey-text col-md-8 col-xs-12 mx-auto">
-      <h3>
+    <div class="text-center my-5 col-lg-6 col-md-6 col-xs-12 mx-auto">
+      <h3 class="display-3">
         Veja como é molezinha o cliente fazer o pedido na sua
-        <strong class="title-contrast">loja online:</strong>
+        <strong class="text-primary">loja mix:</strong>
       </h3>
     </div>
     <div class="row justify-center">
@@ -11,14 +11,20 @@
         v-for="(item, index) in icons"
         :key="index"
         href="#"
-        class="item-section col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center"
+        class="card mx-2 pa-5 col-lg-2 col-md-2 col-sm-12 col-xs-6 text-center"
       >
-        <div class="page-section-image">
-          <img :src="item.icon" />
-        </div>
-        <div class="headline">
-          <h4 class="text-one" v-text="item.text1"></h4>
-          <h4 class="text-two" v-text="item.text2"></h4>
+        <div class="pa-2 py-3">
+          <div class="page-section-image">
+            <img :src="item.icon" />
+          </div>
+          <div class="headline">
+            <div>
+              <span class="text-one" v-text="item.text1"></span>
+            </div>
+            <div>
+              <span class="text-primary" v-text="item.text2"></span>
+            </div>
+          </div>
         </div>
       </a>
     </div>
@@ -70,7 +76,7 @@ export default {
 }
 .item-section {
   margin: 10px 20px;
-  padding: 30px;
+  padding: 20px;
   border-radius: 40px;
   border: 1px solid #eff2f6;
   text-decoration: none;
@@ -78,15 +84,11 @@ export default {
 
 .title-contrast {
   font-weight: bold;
-  color: #0b10fd;
+  color: #6628ea;
 }
-.headline {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-}
+
 .headline .text-two {
-  color: #0b10fd;
+  color: #6628ea;
 }
 .headline .text-one {
   color: #6b6b6b;

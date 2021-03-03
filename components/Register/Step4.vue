@@ -3,20 +3,20 @@
     <div class="logo-form">
       <img width="100" height="50px" :src="logo" />
     </div>
-    <div class="display-1">Escolha um plano</div>
+    <div class="display-4">Escolha um plano</div>
     <div class="text">Para finalizar escolha um de nossos planos:</div>
     <div
       v-for="(item, index) in plans"
       :key="index"
-      class="card-hover card pa-2 my-2"
+      class="card-hover card py-2 my-2"
       :class="select_id === item.id ? 'selected-plan' : ''"
       @click="setPlan(item)"
     >
       <div class="row align-center">
         <div class="col-ml-3">
-          <img width="40px" :src="item.image" />
+          <img height="60px" :src="item.image" />
         </div>
-        <div class="col-ml-6">
+        <div class="col-ml-8">
           <div class="text-left">
             <span v-text="item.title">Plano inciante</span>
           </div>
@@ -24,6 +24,7 @@
         </div>
       </div>
     </div>
+    <button @click="nextPage" class="btn btn-primary">Confirmar dados</button>
   </div>
 </template>
 
@@ -100,32 +101,8 @@ export default {
     },
   },
   methods: {
-    getAddressByString() {
-      this.loading = true
-      this.$store
-        .dispatch('request', {
-          method: 'post',
-          url: '/coord-address',
-          data: {
-            address: `${characterRemove(this.address.street)}, ${
-              this.address.number
-            },${characterRemove(this.address.district)}`,
-          },
-        })
-        .then((resp) => {
-          const user = {
-            ...this.user,
-            address: resp,
-            user_cpanel: true,
-            adm: 'S',
-          }
-          this.$store.commit('setState', ['user', user])
-          this.$router.push('/cadastrar/plano')
-          console.log(resp)
-        })
-        .catch((err) => {
-          console.log(err)
-        })
+    nextPage() {
+      this.$router.push('/loading')
     },
     setPlan(item) {
       this.$store.commit('setState', ['planSelected', item])
@@ -140,7 +117,6 @@ export default {
   width: 50px;
 }
 .plan-details {
-  background-color: #6628ea;
   color: white;
 }
 </style>

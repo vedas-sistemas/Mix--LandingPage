@@ -1,50 +1,37 @@
 <template>
-  <div class="nav">
-    <div id="myNav" class="overlay">
-      <!-- Button to close the overlay navigation -->
-      <a class="closebtn" @click="closeNav()"
-        ><span class="mdi mdi-close"></span
-      ></a>
-
-      <!-- Overlay content -->
-      <div class="overlay-content">
-        <a href="#">home</a>
-        <a href="#">sobre</a>
-        <a href="#">dúvidas</a>
-        <a href="#">nossos planos</a>
-      </div>
-    </div>
-    <div class="topnav" id="myTopnav">
-      <div class="row space-between align-center responsive">
-        <div class="col-md-4 col-lg-5 col-xs-6">
-          <div class="row align-center justify-start px-3">
-            <div class="logo-menu mr-1">
-              <img :src="logo" />
+  <div class="row justify-center align-center ">
+    <div class="col-ml-12 col-lg-8">
+      <div class="topnav py-3">
+        <div class="row space-around align-center responsive">
+          <div class="col-md-4 col-ml-2 col-lg-2 col-xs-6">
+              <div class="logo-menu">
+                <img :src="logo" />
+              </div>
             </div>
-            <div class="title-nav"></div>
+             <div class="col-lg-6  col-ml-8 col-xs-1 nav-items">
+            <a href="#Home" class="nav-item">Home</a>
+            <a href="#news" class="nav-item">Sobre</a>
+            <a href="#contact" class="nav-item">Dúvidas</a>
+            <NuxtLink class="nav-item-btn" to="/cadastrar"
+              >Quero ser parceiro</NuxtLink
+            >
+            <a href="#" class="nav-item-icon">
+              <span class="mdi mdi-facebook"></span
+            ></a>
+            <a href="#" class="nav-item-icon">
+              <span class="mdi mdi-twitter"></span
+            ></a>
+            <a href="#" class="nav-item-icon">
+              <span class="mdi mdi-youtube"></span
+            ></a>
           </div>
-        </div>
-        <div class="col-lg-7 col-md-8 col-xs-1 nav-items">
-          <a href="#Home" class="nav-item">Home</a>
-          <a href="#news" class="nav-item">Sobre</a>
-          <a href="#contact" class="nav-item">Dúvidas</a>
-          <NuxtLink class="nav-item-btn" to="/cadastrar"
-            >Quero ser parceiro</NuxtLink
-          >
-          <a href="#" class="nav-item-icon">
-            <span class="mdi mdi-facebook"></span
-          ></a>
-          <a href="#" class="nav-item-icon">
-            <span class="mdi mdi-twitter"></span
-          ></a>
-          <a href="#" class="nav-item-icon">
-            <span class="mdi mdi-youtube"></span
-          ></a>
-        </div>
-        <div class="col-xs-1 col-sm-1 menu">
-          <span @click="openMenu()">
-            <i class="mdi mdi-menu"></i>
-          </span>
+          </div>
+
+          <div class="col-xs-1 col-sm-1 col-lg-5 menu">
+            <span @click="openMenu()">
+              <i class="mdi mdi-menu"></i>
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -55,7 +42,7 @@ import logo from '@/assets/index.js'
 export default {
   data() {
     return {
-      logo: logo.logo_menu,
+      logo: logo.logo,
     }
   },
   methods: {
@@ -70,15 +57,16 @@ export default {
 </script>
 <style lang="scss">
 .topnav {
-  background: linear-gradient(-45deg, #9300dc 20%, #4144e8 70%);
+}
+.topnav {
   background-repeat: no-repeat;
   padding: 10px 10px;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
   z-index: 3;
   .title-nav {
     font-size: 28px;
-    color: #def5f2;
+    color: #3a3b3b;
     max-width: 180px;
   }
   .logo {
@@ -93,18 +81,18 @@ export default {
     padding: 10px 20px;
     letter-spacing: 0;
     font-weight: 500;
-    color: #ffffff;
+    color: #3a3b3b;
   }
   .nav-item:hover {
-    color: #def5f2;
-    background-color: #fff !important;
+   background: #ffff;
+    color: #5530e5;
     border-radius: 8px;
   }
   .nav-item-btn {
     text-align: center;
     text-decoration: none;
     background: #ffff;
-    color: #0b10fd;
+    color: #5530e5;
     box-shadow: none;
     border-radius: 8px;
     font-size: 16px;
@@ -121,12 +109,12 @@ export default {
   .nav-item-icon {
     font-size: 16px;
     margin: 0px 10px;
-    color: white;
+    color: #5530e5;
     padding: 10px 16px;
   }
   .nav-item-icon:hover {
-    color: #def5f2;
-    background-color: #fac720 !important;
+     background: #ffff;
+    color: #5530e5;
     border-radius: 8px;
   }
 
@@ -168,7 +156,7 @@ export default {
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  background: linear-gradient(-45deg, #0b10fd 20%, #0b10fd 70%);
+  background: linear-gradient(-45deg, #6628ea 20%, #6628ea 70%);
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -205,7 +193,7 @@ export default {
   font-size: 40px;
 }
 .logo-menu {
-  width: 120px;
+  width: 180px;
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {

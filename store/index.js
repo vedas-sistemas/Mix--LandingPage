@@ -1,4 +1,5 @@
 import { errorMessage } from '../mixins/global.js'
+
 export const state = () => ({
   user: null,
   error: null,

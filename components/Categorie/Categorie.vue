@@ -1,32 +1,50 @@
 <template>
-  <div class="section py-5">
-    <div class="title text-center grey-text">
-      <h3>
-        O mix se adapta a qualquer tipo de <br />
-        <strong class="title-contrast">delivery</strong>
-      </h3>
+  <div class="section py-5 my-5">
+    <div class="text-center my-5">
+      <span class="display-3">
+        O <strong>mix</strong> é a plataforma ideal para todos os tipos de
+        <br />
+        restaurantes: <strong class="text-primary">grandes ou pequenos</strong>
+      </span>
     </div>
-    <section class="container-categorie row justify-center">
-      <div
-        v-for="(item, index) in categories"
-        :key="index"
-        class="card-categorie col-md-2 col-xs-5"
-        href="#"
-      >
-        <div class="content">
-          <img class="logo" :src="item.image" alt="categorie" />
-          <span class="categorie-title" v-text="item.title"></span>
+    <hooper :settings="hooperSettings">
+      <slide class="mx-3 py-5" v-for="(item, index) in categories" :key="index">
+        <div class="card card-categorie pa-5 mx-3 card-hover" href="#">
+          <div class="pa-5">
+            <div class="row justify-center">
+              <img class="icon-categorie" :src="item.image" alt="categorie" />
+            </div>
+            <div class="headline text-center">
+              <span class="text-primary" v-text="item.title"></span>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </slide>
+      <hooper-pagination slot="hooper-addons"></hooper-pagination>
+    </hooper>
+    <section class="row justify-center"></section>
   </div>
 </template>
 <script>
 import list from '@/assets/index.js'
+import { Hooper, Slide, Pagination as HooperPagination } from 'hooper'
+
 export default {
+  components: {
+    Hooper,
+    Slide,
+    HooperPagination,
+  },
   data() {
     return {
       categories: null,
+      hooperSettings: {
+        itemsToShow: 5,
+        centerMode: false,
+        mouseDrag: true,
+        wheelControl: true,
+        infiniteScroll: true,
+      },
     }
   },
   mounted() {
@@ -37,48 +55,12 @@ export default {
 </script>
 
 <style lang="scss">
-.container-categorie {
-  height: 100%;
-  margin: 50px 0px;
-}
-.container-categorie a {
-  text-decoration: none;
-}
-.card-categorie:hover {
-  background: #dedbfc;
-  color: #6b6b6b, 100%;
-  border: 0;
-  -webkit-transform: scale(1.05);
+.icon-categorie {
+  width: 100px;
+  height: 100px;
+  padding: 15px 15px;
 }
 .card-categorie {
-  transition: all 0.35s ease;
-  margin: auto 0;
-  margin: 10px 15px;
-  border-radius: 20px;
-  padding: 30px;
-  cursor: pointer;
-  border: 1px solid #eff2f6;
-  .content {
-    padding: 30px;
-
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-  }
-  .categorie-title {
-    font-style: normal;
-    font-size: 15px;
-    line-height: 26px;
-    color: #0b10fd;
-    min-width: 100px;
-    text-align: center;
-  }
-  img {
-    width: 70px;
-    height: 70px;
-    padding: 15px 15px;
-    color: red;
-  }
+  /* height: 60vh; */
 }
 </style>

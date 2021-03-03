@@ -4,7 +4,7 @@
       <div class="logo-form my-3">
         <img width="100" height="50px" :src="logo" />
       </div>
-      <div class="display-1">Informações sobre a empresa</div>
+      <div class="display-4">Informações sobre a empresa</div>
       <div class="text">Agora precisamos das informações sobre seu negócio</div>
       <form @submit.prevent="setCompany" class="form my-5">
         <div class="group">

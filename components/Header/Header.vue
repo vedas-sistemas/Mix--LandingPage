@@ -1,26 +1,29 @@
 <template>
-  <div class="section banner">
-    <div class="row header-container align-center justify-center space-around">
-      <div class="col-lg-6 col-xs-12 col-sd-12 col-sm-12 col-md-6">
-        <div class="header-child-text">
-          <div class="title white-text">
-            <h3>Uma plataforma de delivery completa para seu o seu negócio</h3>
+  <div class="section">
+    <div class="row align-center justify-center space-around">
+      <div class="col-lg-6 col-xs-12 col-sd-12 col-sm-12 col-ml-5">
+        <div>
+          <div>
+            <span class="display-2">
+              Uma plataforma de <strong>delivery completa</strong> para seu o
+              seu negócio
+            </span>
           </div>
-          <div class="header-child-details">
+          <div class="my-2">
             <p>
               seu cliente não precisa instalar nada. Aumente suas vendas e
               economize com aplicativos marketplaces.
             </p>
           </div>
-          <div class="header-child-btn col-lg-8">
-            <a href="#">Quero ser parceiro</a>
+          <div class="col-ml-5 col-lg-6 my-5 px-0">
+            <button href="#" class="btn btn-primary">Quero ser parceiro</button>
           </div>
         </div>
       </div>
       <div
         class="col-lg-6 col-md-5 col-xs-12 col-sd-12 col-sm-12 header-child-item"
       >
-        <div class="header-child-image">
+        <div class="my-5">
           <img :src="imageUrl" />
         </div>
       </div>
@@ -38,42 +41,4 @@ export default {
 }
 </script>
 
-<style>
-.header-child-btn a {
-  text-align: center;
-  text-decoration: none;
-  background: #f7bd00;
-  color: #0b10fd;
-  box-shadow: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 800;
-  padding: 18px 30px;
-}
-
-.header-child-btn a:hover {
-  color: #def5f2;
-  background-color: #fff !important;
-}
-.header-container {
-  color: #def5f2;
-  padding: 10px 0px;
-}
-.header-child > .header-child-text {
-  margin: 0px 10px;
-}
-.header-child-item {
-  margin: 0;
-  padding: 0;
-}
-.header-child-image {
-  padding: 30px;
-}
-.header-child-details {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 33px;
-  margin: 30px 0px;
-}
-</style>
+<style></style>

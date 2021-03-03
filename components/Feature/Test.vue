@@ -49,7 +49,7 @@ export default {
     max-width: 500px;
   }
   strong {
-    color: #0b10fd;
+    color: #6628ea;
   }
   .content {
     text-align: left;

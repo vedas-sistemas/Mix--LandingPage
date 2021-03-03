@@ -1,28 +1,26 @@
 <template>
-  <div class="section col-ml-12 col-lg-7 mx-auto pa-5 my-5">
-    <div class="row justify-center">
-      <div class="col-lg-5 col-md-6">
-        <h3 class="display-3 text-center text-light my-3 py-5">
-          Veja por que o <strong class="text-info">mix</strong> é a solução
-          certa para o seu negócio
+  <div class="section my-5">
+    <div
+      class="title text-center grey-text col-lg-6 col-md-6 col-xs-12 mx-auto"
+    ></div>
+    <div class="row align-center justify-center">
+      <div class="col-lg-5 col-xs-12 col-sd-12 col-sm-12 col-ml-5">
+        <h3 class="display-2">
+          O <strong class="text-primary">mix</strong> vai turbinar a suas vendas
           <strong class="text-primary"></strong>
         </h3>
+        <div ref="accordion">
+          <Accordion :contents="contents" />
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-6" v-for="(item, index) in contents">
-        <div class="pa-5 row align-center justify-center">
-          <div class="icon col-md-3 col-lg-3">
-            <img height="100%" :src="item.icon" />
-          </div>
-          <div class="content col-md-9">
-            <div class="text-light headline">
-              <span v-text="item.title"></span>
-            </div>
-            <div class="text-light">
-              <span v-text="item.description"></span>
-            </div>
-          </div>
+      <div
+        class="col-lg-6 col-md-5 col-xs-12 col-sd-12 col-sm-12 header-child-item"
+      >
+        <div>
+          <img
+            width="80%"
+            :src="require('~/assets/images/feature/image-app.svg')"
+          />
         </div>
       </div>
     </div>
@@ -30,38 +28,32 @@
 </template>
 
 <script>
+import Accordion from '../Accordion/Accordion.vue'
 export default {
+  components: { Accordion },
   data() {
     return {
       contents: [
         {
           title: 'Cardápio digital',
-          icon:
-            'https://www.flaticon.com/svg/vstatic/svg/4297/4297071.svg?token=exp=1614787726~hmac=15220d7b79dcf9149d2ed2c4c1589941',
           description:
             'O cliente faz o pedido direto de um cardápio em tablet, totem de autoatendimento ou no próprio celular.',
           active: false,
         },
         {
           title: 'Escolha de opcionais',
-          icon:
-            'https://www.flaticon.com/svg/vstatic/svg/4296/4296866.svg?token=exp=1614787726~hmac=286b0f8c5623955779353360c1d314e4',
           description:
             'Seleciona rapidamente os opcionais e adicionais os que desejar.',
           active: false,
         },
         {
           title: 'Enviamos para a cozinha',
-          icon:
-            'https://www.flaticon.com/svg/vstatic/svg/3524/3524457.svg?token=exp=1614788118~hmac=a7a7f63e646d2947fbddac8c4ad1a075',
           description:
             'O pedido é enviado para uma tela de pedidos ou direto para o sistema de gestão (PDV).',
           active: false,
         },
         {
           title: 'Receba seu pedido',
-          icon:
-            'https://www.flaticon.com/svg/vstatic/svg/4296/4296866.svg?token=exp=1614787726~hmac=286b0f8c5623955779353360c1d314e4',
           description:
             'O pedido é entregue ao cliente com muito mais agilidade e economia de funcionários.',
           active: false,

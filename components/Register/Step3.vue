@@ -4,28 +4,35 @@
       <div class="logo-form">
         <img width="100" height="50px" :src="logo" />
       </div>
-      <div class="display-1">Informações sobre a empresa</div>
+      <div class="display-4">Informações sobre a empresa</div>
       <div class="text">Agora precisamos do endereço seu negócio</div>
       <form @submit.prevent="getAddressByString" class="form my-5">
+        <div class="row d-flex">
+          <div class="col-md-8 px-0">
+            <div class="group">
+              <input v-model="address.street" type="text" required />
+              <label>Rua</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="group">
+              <input v-model="address.number" type="number" required />
+              <label>Número</label>
+            </div>
+          </div>
+        </div>
+
         <div class="group">
-          <input id="name" v-model="address.street" type="text" required />
-          <label for="name">Rua</label>
+          <input v-model="address.district" type="text" required />
+          <label>Bairro</label>
         </div>
         <div class="group">
-          <input id="name" v-model="address.number" type="text" required />
-          <label for="name">Número</label>
+          <input v-model="address.city" type="text" required />
+          <label>Cidade</label>
         </div>
         <div class="group">
-          <input id="name" v-model="address.district" type="text" required />
-          <label for="name">Bairro</label>
-        </div>
-        <div class="group">
-          <input id="name" v-model="address.city" type="text" required />
-          <label for="name">Cidade</label>
-        </div>
-        <div class="group">
-          <input id="name" v-model="address.state" type="text" required />
-          <label for="name">Estado</label>
+          <input v-model="address.state" type="text" required />
+          <label>Estado</label>
         </div>
         <button class="btn btn-primary">Confirmar dados</button>
       </form>

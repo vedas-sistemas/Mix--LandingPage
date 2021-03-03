@@ -1,9 +1,11 @@
 <template>
-  <div class="footer">
+  <div class="footer col-ml-12 col-lg-7 mx-auto bg-theme">
     <div class="wrapper banner row space-between align">
       <div class="col-md-3 col-lg-3 col-xs-12">
         <div class="brand">
-          <h3 class="title-nav">mix | delivery</h3>
+          <div class="logo-menu">
+            <img :src="logo" />
+          </div>
           <div>
             <span
               >Aumente suas vendas e economize com aplicativos
@@ -91,7 +93,15 @@
 </template>
 
 <script>
-export default {}
+import logo from '@/assets/index.js'
+
+export default {
+  data() {
+    return {
+      logo: logo.logo_menu,
+    }
+  },
+}
 </script>
 
 <style lang="scss">

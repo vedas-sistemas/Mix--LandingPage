@@ -4,12 +4,12 @@
       <div class="logo-form my-3">
         <img :src="logo" />
       </div>
-      <div class="display-1">Informações Pessoais</div>
+      <div class="display-4">Informações Pessoais</div>
       <div class="text">
         Para começar precisamos dos dados pessoais do proprietário ou
         responsável
       </div>
-      <form @submit.prevent="verifyEmail" class="form my-5">
+      <form @submit.prevent="verifyEmail" class="form">
         <div class="group">
           <input v-model="name" type="text" required />
           <label for="name">Nome completo</label>
