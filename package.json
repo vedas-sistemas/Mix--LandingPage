@@ -22,6 +22,7 @@
     "nuxt-gsap": "^0.1.4",
     "nuxtjs-mdi-font": "^1.0.2",
     "v-mask": "^2.2.4",
+    "vue-rellax": "^0.2.0",
     "vue-step-wizard": "^0.1.16",
     "vue-the-mask": "^0.11.1",
     "vuelidate": "^0.7.6"
