@@ -36,34 +36,30 @@ export default {
       contents: [
         {
           title: 'Cardápio digital',
-          icon:
-            'https://www.flaticon.com/svg/vstatic/svg/4297/4297071.svg?token=exp=1614787726~hmac=15220d7b79dcf9149d2ed2c4c1589941',
+          icon: require('@/assets/images/feature/wireframe.svg'),
           description:
             'O cliente faz o pedido direto de um cardápio em tablet, totem de autoatendimento ou no próprio celular.',
           active: false,
         },
         {
-          title: 'Escolha de opcionais',
-          icon:
-            'https://www.flaticon.com/svg/vstatic/svg/4296/4296866.svg?token=exp=1614787726~hmac=286b0f8c5623955779353360c1d314e4',
+          title: 'Crie promoções e cupons',
+          icon: require('@/assets/images/feature/price-label.svg'),
           description:
-            'Seleciona rapidamente os opcionais e adicionais os que desejar.',
+            'Destaque itens do cardápio em uma aba de promoções, crie cortesias e vouchers de desconto.',
           active: false,
         },
         {
-          title: 'Enviamos para a cozinha',
-          icon:
-            'https://www.flaticon.com/svg/vstatic/svg/3524/3524457.svg?token=exp=1614788118~hmac=a7a7f63e646d2947fbddac8c4ad1a075',
+          title: 'Pedidos do WhatsApp',
+          icon: require('@/assets/images/feature/whatsapp.svg'),
           description:
-            'O pedido é enviado para uma tela de pedidos ou direto para o sistema de gestão (PDV).',
+            'Recebimento de pedidos no WhatsApp. O  mix envia o status do pedido diretamente para o WhatsApp do seu cliente.',
           active: false,
         },
         {
-          title: 'Receba seu pedido',
-          icon:
-            'https://www.flaticon.com/svg/vstatic/svg/4296/4296866.svg?token=exp=1614787726~hmac=286b0f8c5623955779353360c1d314e4',
+          title: 'Divulgação Automática',
+          icon: require('@/assets/images/feature/smartphone.svg'),
           description:
-            'O pedido é entregue ao cliente com muito mais agilidade e economia de funcionários.',
+            'Configure campanhas para serem enviadas via WhatsApp para seus clientes da sua loja.',
           active: false,
         },
       ],

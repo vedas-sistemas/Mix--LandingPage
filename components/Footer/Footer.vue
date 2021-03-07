@@ -83,7 +83,7 @@
         </div>
       </div>
     </div>
-    <div class="bottom-footer">
+    <div class="bottom-footer text-light">
       <span
         >Desenvolvido por vedassistemas <span class="mdi mdi-copyright"></span
       ></span>
@@ -107,7 +107,7 @@ export default {
 <style lang="scss">
 .footer {
   .wrapper {
-    padding: 70px 30px;
+    padding: 20px 30px;
     color: white;
     margin-top: 50px;
   }
@@ -120,11 +120,12 @@ export default {
   }
 
   .social-icons a:hover {
-    background: #f7bd00;
+    background: #fff;
     border-radius: 8px;
-    color: #ffffff;
+    color: #6628ea;
     padding: 5px 15px;
   }
+
   .social-icons a {
     color: #ffffff;
     padding: 5px 15px;
@@ -145,9 +146,9 @@ export default {
     color: #fff;
   }
   .footer-items a:hover {
-    border-bottom: 2px solid #f7bd00;
+    border-bottom: 2px solid #fff;
     background-color: transparent;
-    color: #f7bd00;
+    color: #fff;
   }
 
   .bottom-footer {

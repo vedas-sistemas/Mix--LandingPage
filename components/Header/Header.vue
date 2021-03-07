@@ -21,6 +21,11 @@
         </div>
       </div>
       <div
+        v-rellax="{
+          // Rellax Options
+          // See: https://github.com/dixonandmoe/rellax#features
+          speed: 3,
+        }"
         class="col-lg-6 col-md-5 col-xs-12 col-sd-12 col-sm-12 header-child-item"
       >
         <div class="my-5">

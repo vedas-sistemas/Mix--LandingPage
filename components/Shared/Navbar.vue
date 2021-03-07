@@ -1,4 +1,5 @@
 <template>
+
   <div class="row justify-center align-center ">
     <div class="col-ml-12 col-lg-8">
       <div class="topnav py-3">
@@ -9,7 +10,7 @@
               </div>
             </div>
              <div class="col-lg-6  col-ml-8 col-xs-1 nav-items">
-            <a href="#Home" class="nav-item">Home</a>
+            <NuxtLink to='/' class="nav-item">Home</NuxtLink>
             <a href="#news" class="nav-item">Sobre</a>
             <a href="#contact" class="nav-item">Dúvidas</a>
             <NuxtLink class="nav-item-btn" to="/cadastrar"
@@ -82,6 +83,7 @@ export default {
     letter-spacing: 0;
     font-weight: 500;
     color: #3a3b3b;
+    cursor: pointer;
   }
   .nav-item:hover {
    background: #ffff;

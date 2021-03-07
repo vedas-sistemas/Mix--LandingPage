@@ -82,7 +82,7 @@
             </div>
             <div class="card-text px-5">
               <div>
-                <span class="display-2"
+                <span class="display-2 text-light"
                   >Todas as funcionalidades do pacote:</span
                 >
               </div>

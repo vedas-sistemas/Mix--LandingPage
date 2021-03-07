@@ -1,6 +1,6 @@
 <template>
-  <div class="section py-5 my-5">
-    <div class="text-center my-5">
+  <div class="section py-5">
+    <div class="text-center">
       <span class="display-3">
         O <strong>mix</strong> é a plataforma ideal para todos os tipos de
         <br />
@@ -8,8 +8,8 @@
       </span>
     </div>
     <hooper :settings="hooperSettings">
-      <slide class="mx-3 py-5" v-for="(item, index) in categories" :key="index">
-        <div class="card card-categorie pa-5 mx-3 card-hover" href="#">
+      <slide v-for="(item, index) in categories" :key="index">
+        <div class="card card-categorie py-5 mx-2 my-5 card-hover" href="#">
           <div class="pa-5">
             <div class="row justify-center">
               <img class="icon-categorie" :src="item.image" alt="categorie" />
@@ -40,7 +40,7 @@ export default {
       categories: null,
       hooperSettings: {
         itemsToShow: 5,
-        centerMode: false,
+        centerMode: true,
         mouseDrag: true,
         wheelControl: true,
         infiniteScroll: true,
