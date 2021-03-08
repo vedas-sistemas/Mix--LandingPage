@@ -1,19 +1,21 @@
 <template>
-  <div class="page-section my-5">
-    <div class="text-center my-5 col-lg-6 col-md-6 col-xs-12 mx-auto">
-      <h3 class="display-3">
+  <div
+    class="row align-center align-content-center section col-md-10 col-lg-10 mx-auto"
+  >
+    <div class="text-center col-lg-6 col-md-8 col-xs-12 mx-auto">
+      <h3 class="display-3 my-5">
         Veja como é molezinha o cliente fazer o pedido na sua
         <strong class="text-primary">loja mix:</strong>
       </h3>
     </div>
-    <div class="row justify-center">
-      <a
+    <div class="row justify-center align-center">
+      <div
         v-for="(item, index) in icons"
         :key="index"
         href="#"
-        class="card mx-2 pa-5 col-lg-2 col-md-2 col-sm-12 col-xs-6 text-center"
+        class="col-lg-3 col-md-3 col-sm-12 col-xs-6 text-center"
       >
-        <div class="pa-2 py-3">
+        <div class="card card-hover pa-4">
           <div class="page-section-image">
             <img :src="item.icon" />
           </div>
@@ -26,7 +28,7 @@
             </div>
           </div>
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </template>
@@ -64,13 +66,6 @@ export default {
 </script>
 
 <style>
-.row a:hover {
-  background: #dedbfc;
-  -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
-  box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
-  color: #6b6b6b, 100%;
-}
-
 .page-section-image img {
   max-width: 150px;
 }
@@ -80,11 +75,6 @@ export default {
   border-radius: 40px;
   border: 1px solid #eff2f6;
   text-decoration: none;
-}
-
-.title-contrast {
-  font-weight: bold;
-  color: #6628ea;
 }
 
 .headline .text-two {

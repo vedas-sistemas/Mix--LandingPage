@@ -1,16 +1,19 @@
 <template>
-  <div class="section col-ml-12 col-lg-7 mx-auto pa-5 my-5">
+  <div
+    id="about"
+    class="row align-center align-content-center section col-ml-12 col-lg-7 mx-auto"
+  >
     <div class="row justify-center">
       <div class="col-lg-5 col-md-6">
-        <h3 class="display-3 text-center text-light my-3 py-5">
+        <h3 class="display-3 text-center my-5 text-light">
           Veja por que o <strong class="text-info">mix</strong> é a solução
           certa para o seu negócio
           <strong class="text-primary"></strong>
         </h3>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-6" v-for="(item, index) in contents">
+    <div class="row justify-center">
+      <div class="col-md-5 col-lg-6" v-for="(item, index) in contents">
         <div class="pa-5 row align-center justify-center">
           <div class="icon col-md-3 col-lg-3">
             <img height="100%" :src="item.icon" />
@@ -64,25 +67,6 @@ export default {
         },
       ],
     }
-  },
-  methods: {
-    openAccordion() {
-      console.log(this.$refs)
-      var acc = this.$refs.accordion
-      console.log(this.$refs.accordion)
-      var i
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener('click', function () {
-          this.classList.toggle('active')
-          var panel = this.nextElementSibling
-          if (panel.style.display === 'block') {
-            panel.style.display = 'none'
-          } else {
-            panel.style.display = 'block'
-          }
-        })
-      }
-    },
   },
 }
 </script>

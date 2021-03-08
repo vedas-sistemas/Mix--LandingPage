@@ -1,5 +1,5 @@
 <template>
-  <div class="section py-5 my-5">
+  <div id="pricing" class="section py-5 my-5">
     <div class="title text-center grey-text">
       <span class="display-3">Flexível e poderoso</span>
     </div>

@@ -11,8 +11,8 @@
             </div>
              <div class="col-lg-6  col-ml-8 col-xs-1 nav-items">
             <NuxtLink to='/' class="nav-item">Home</NuxtLink>
-            <a href="#news" class="nav-item">Sobre</a>
-            <a href="#contact" class="nav-item">Dúvidas</a>
+            <a  v-scroll-to="'#about'" class="nav-item">Sobre</a>
+            <a  v-scroll-to="'#pricing'" class="nav-item">Preços</a>
             <NuxtLink class="nav-item-btn" to="/cadastrar"
               >Quero ser parceiro</NuxtLink
             >

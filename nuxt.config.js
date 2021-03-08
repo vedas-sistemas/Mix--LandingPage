@@ -8,7 +8,7 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     htmlAttrs: {
-      lang: 'pt-br',
+      lang: 'pt-BR',
     },
     title: 'Mix--LandingPage',
     meta: [
@@ -27,11 +27,9 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['~/assets/scss/main.scss'],
+  css: ['~/assets/scss/main.scss', 'hooper/dist/hooper.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [{ src: '~~/node_modules/vue-rellax/lib/nuxt-plugin', ssr: false }],
-
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
@@ -50,6 +48,7 @@ export default {
     '@nuxtjs/pwa',
     'nuxtjs-mdi-font',
     '@neneos/nuxt-animate.css',
+    'vue-scrollto/nuxt',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
