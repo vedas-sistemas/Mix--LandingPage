@@ -108,7 +108,6 @@
 </template>
 <script>
 import { Hooper, Slide, Pagination as HooperPagination } from 'hooper'
-import 'hooper/dist/hooper.css'
 export default {
   transition: {},
   components: {

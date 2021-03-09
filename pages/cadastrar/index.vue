@@ -1,7 +1,7 @@
 <template>
   <div>
     <main>
-      <Step />
+      <RegisterStep />
     </main>
   </div>
 </template>
@@ -9,7 +9,6 @@
 export default {
   layout: 'register',
   transition: '',
-
   data() {
     return {
       firstImage: require('~/assets/images/register/first.svg'),
