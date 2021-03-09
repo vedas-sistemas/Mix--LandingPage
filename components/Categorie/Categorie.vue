@@ -7,27 +7,29 @@
         restaurantes: <strong class="text-primary">grandes ou pequenos</strong>
       </span>
     </div>
-    <hooper :settings="hooperSettings">
-      <slide v-for="(item, index) in categories" :key="index">
-        <div class="card card-categorie py-5 mx-2 my-5 card-hover" href="#">
-          <div class="pa-5">
-            <div class="row justify-center">
-              <img class="icon-categorie" :src="item.image" alt="categorie" />
-            </div>
-            <div class="headline text-center">
-              <span class="text-primary" v-text="item.title"></span>
+    <div>
+      <hooper :settings="hooperSettings">
+        <slide v-for="(item, index) in categories" :key="index">
+          <div class="card card-categorie py-5 mx-2 my-5 card-hover" href="#">
+            <div class="pa-5">
+              <div class="row justify-center">
+                <img class="icon-categorie" :src="item.image" alt="categorie" />
+              </div>
+              <div class="headline text-center">
+                <span class="text-primary" v-text="item.title"></span>
+              </div>
             </div>
           </div>
-        </div>
-      </slide>
-      <hooper-pagination slot="hooper-addons"></hooper-pagination>
-    </hooper>
-    <section class="row justify-center"></section>
+        </slide>
+        <hooper-pagination slot="hooper-addons"></hooper-pagination>
+      </hooper>
+    </div>
   </div>
 </template>
 <script>
 import list from '@/assets/index.js'
 import { Hooper, Slide, Pagination as HooperPagination } from 'hooper'
+import 'hooper/dist/hooper.css'
 
 export default {
   components: {
