@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main><RegisterStep2 /></main>
+    <main><Step2 /></main>
   </div>
 </template>
 <script>
