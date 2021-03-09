@@ -29,7 +29,6 @@
 <script>
 import list from '@/assets/index.js'
 import { Hooper, Slide, Pagination as HooperPagination } from 'hooper'
-import 'hooper/dist/hooper.css'
 
 export default {
   components: {

@@ -1348,27 +1348,26 @@ $col-width: 8.333333333333333%; /* 1 Column Width = 100% / 12 */
   justify-items: center;
 }
 .hooper-indicators {
-  display: flex;
-  justify-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  width: 40%;
+  display: flex !important;
+  justify-items: center !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  width: 40% !important;
 }
 .hooper-indicator:hover,
 .hooper-indicator.is-active {
-  background-color: #26c6da;
+  background-color: #26c6da !important;
 }
 .hooper-indicator {
-  margin: 0 2px;
-  border: none;
-  padding: 0;
-  background-color: #fff;
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  background-color: rgb(235, 240, 231);
-  border-radius: 50%;
+  margin: 0 2px !important;
+  border: none !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  height: 15px !important;
+  width: 15px !important;
+  background-color: rgb(200, 202, 198) !important;
+  border-radius: 50% !important;
 }
 .hooper-pagination.is-vertical {
   bottom: auto;
