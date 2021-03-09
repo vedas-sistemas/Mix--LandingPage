@@ -88,7 +88,7 @@ export default {
             adm: 'S',
           }
           this.$store.commit('setState', ['user', user])
-          this.$router.push('/cadastrar/plano')
+          this.$router.push('/plano')
           this.$root.$emit('slide-next')
         })
         .catch((err) => {

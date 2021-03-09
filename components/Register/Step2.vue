@@ -75,7 +75,7 @@ export default {
         }
         this.$root.$emit('slide-next')
         this.$store.commit('setState', ['user', user])
-        this.$router.push('/cadastrar/endereco')
+        this.$router.push('/endereco')
         this.error = false
       } else {
         this.error = true

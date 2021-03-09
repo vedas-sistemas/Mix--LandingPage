@@ -106,7 +106,7 @@ export default {
                 birthday: this.birthday,
               },
             ])
-            this.$router.push('cadastrar/empresa')
+            this.$router.push('/empresa')
           })
           .catch((err) => {
             const error = errorMessage(err)
