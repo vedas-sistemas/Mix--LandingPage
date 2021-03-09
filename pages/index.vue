@@ -6,7 +6,6 @@
     <div class="col-ml-12 col-lg-12 mx-auto">
       <Categorie />
     </div>
-
     <div class="bg-theme">
       <DetailsApp />
     </div>

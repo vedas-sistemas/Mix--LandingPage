@@ -1,7 +1,7 @@
 <template>
-  <div class="footer col-ml-12 col-lg-7 mx-auto bg-theme">
+  <div class="footer col-ml-12 col-lg-12 mx-auto bg-theme">
     <div class="wrapper banner row space-between align">
-      <div class="col-md-3 col-lg-3 col-xs-12">
+      <div class="col-md-3 col-lg-4 col-xs-12">
         <div class="brand">
           <div class="logo-menu">
             <img :src="logo" />
@@ -62,10 +62,10 @@
             <a href="#">Inicio</a>
           </div>
           <div class="footer-item my-1">
-            <a href="#">Sobre</a>
+            <a href="#" v-scroll-to="'#about'">Sobre</a>
           </div>
           <div class="footer-item my-1">
-            <a href="#">Dúvidas</a>
+            <a href="#" v-scroll-to="'#pricing'">Preços</a>
           </div>
         </div>
       </div>

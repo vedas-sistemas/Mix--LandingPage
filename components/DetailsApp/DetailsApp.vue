@@ -1,10 +1,10 @@
 <template>
   <div
     id="about"
-    class="row align-center align-content-center section col-ml-12 col-lg-7 mx-auto"
+    class="row align-center align-content-center section col-ml-12 col-lg-10 col-xl-8 mx-auto"
   >
     <div class="row justify-center">
-      <div class="col-lg-5 col-md-6">
+      <div class="col-lg-6 col-md-6">
         <h3 class="display-3 text-center my-5 text-light">
           Veja por que o <strong class="text-info">mix</strong> é a solução
           certa para o seu negócio

@@ -1,14 +1,14 @@
 <template>
   <div class="row justify-center align-center ">
-    <div class="col-ml-12 col-lg-8">
+    <div class="col-ml-12 col-lg-12">
       <div class="topnav py-3">
         <div class="row space-around align-center responsive">
-          <div class="col-md-4 col-ml-2 col-lg-2 col-xs-6">
+          <div class="col-md-4 col-ml-2 col-lg-4 col-xs-6">
               <div class="logo-menu">
                 <img :src="logo" />
               </div>
             </div>
-             <div class="col-lg-6  col-ml-8 col-xs-1 nav-items">
+             <div class="col-lg-8  col-ml-8 col-xs-1 nav-items">
             <NuxtLink to='/' class="nav-item">Home</NuxtLink>
             <a  v-scroll-to="'#about'" class="nav-item">Sobre</a>
             <a  v-scroll-to="'#pricing'" class="nav-item">Preços</a>
@@ -26,7 +26,6 @@
             ></a>
           </div>
           </div>
-
           <div class="col-xs-1 col-sm-1 col-lg-5 menu">
             <span @click="openMenu()">
               <i class="mdi mdi-menu"></i>
