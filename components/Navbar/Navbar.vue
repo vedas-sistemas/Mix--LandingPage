@@ -15,13 +15,14 @@
             <NuxtLink class="nav-item-btn" to="/cadastrar"
               >Quero ser parceiro</NuxtLink
             >
-            <a href="#" class="nav-item-icon">
+            <a target="_blank" href="https://www.facebook.com/mixappentregas" class="nav-item-icon">
               <span class="mdi mdi-facebook"></span
             ></a>
-            <a href="#" class="nav-item-icon">
+            <a target="_blank" href="https://twitter.com/mixappentregas" class="nav-item-icon">
               <span class="mdi mdi-twitter"></span
             ></a>
-            <a href="#" class="nav-item-icon">
+            <a target="_blank"
+                href="https://www.youtube.com/channel/UCqWi6InU4DH0C_YElZpAYCQ/about" class="nav-item-icon">
               <span class="mdi mdi-youtube"></span
             ></a>
           </div>

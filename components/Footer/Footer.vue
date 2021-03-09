@@ -19,14 +19,23 @@
           </div>
           <div class="row justify-start">
             <div class="col-md-4 pa-0">
-              <a href="#"> <span class="mdi mdi-facebook"></span></a>
+              <a target="_blank" href="https://www.facebook.com/mixappentregas">
+                <span class="mdi mdi-facebook"></span
+              ></a>
             </div>
             <div class="col-md-4 pa-0">
-              <a href="#"> <span class="mdi mdi-twitter"></span></a>
+              <a target="_blank" href="https://twitter.com/mixappentregas">
+                <span class="mdi mdi-twitter"></span
+              ></a>
             </div>
 
             <div class="col-md-4 pa-0">
-              <a href="#"> <span class="mdi mdi-youtube"></span></a>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCqWi6InU4DH0C_YElZpAYCQ/about"
+              >
+                <span class="mdi mdi-youtube"></span
+              ></a>
             </div>
           </div>
         </div>
@@ -47,7 +56,10 @@
             >
           </div>
           <div class="footer-item my-1">
-            <a href="#">
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=556696389809"
+            >
               <span class="mdi mdi-whatsapp icon"></span>+55 66 99638 9809</a
             >
           </div>
