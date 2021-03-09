@@ -1,5 +1,4 @@
 <template>
-
   <div class="row justify-center align-center ">
     <div class="col-ml-12 col-lg-8">
       <div class="topnav py-3">
