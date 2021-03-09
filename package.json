@@ -9,7 +9,8 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js",
-    "deploy": "npm run build && node server.js"
+    "deploy": "npm run build && node server.js",
+    "pm2":"pm2 deploy landing"
   },
   "dependencies": {
     "@neneos/nuxt-animate.css": "0.0.1",
