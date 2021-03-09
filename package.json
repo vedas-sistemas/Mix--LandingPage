@@ -18,6 +18,7 @@
     "animate.css": "^4.1.1",
     "core-js": "^3.6.5",
     "epic-spinners": "^1.1.0",
+    "express": "^4.17.1",
     "hooper": "^0.3.4",
     "nuxt": "^2.14.6",
     "nuxt-gsap": "^0.1.4",
