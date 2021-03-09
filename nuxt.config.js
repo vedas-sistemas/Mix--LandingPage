@@ -46,7 +46,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    'nuxtjs/mdi-font',
+    'nuxtjs-mdi-font',
     '@neneos/nuxt-animate.css',
     'vue-scrollto/nuxt',
   ],
