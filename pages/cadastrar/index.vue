@@ -1,7 +1,7 @@
 <template>
   <div>
     <main>
-      <RegisterStep />
+      <Step />
     </main>
   </div>
 </template>
@@ -16,7 +16,6 @@ export default {
   },
   methods: {
     next() {
-      console.log('next')
       this.$router.push({ path: '/' })
     },
   },
