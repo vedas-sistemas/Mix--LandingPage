@@ -1,7 +1,7 @@
 <template>
   <div>
     <main>
-      <Step />
+      <RegisterStep />
     </main>
   </div>
 </template>
