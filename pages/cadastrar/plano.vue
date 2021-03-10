@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main><RegisterStep4 /></main>
+    <main><PlansData /></main>
   </div>
 </template>
 

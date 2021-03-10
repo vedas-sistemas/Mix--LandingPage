@@ -49,7 +49,7 @@ import { validateEmail } from '@/mixins/global.js'
 import { mask } from 'vue-the-mask'
 import { required, email } from 'vuelidate/lib/validators'
 import logo from '@/assets/index.js'
-import { errorMessage } from '../../mixins/global'
+import { errorMessage } from '../mixins/global'
 
 export default {
   directives: { mask },

@@ -1,7 +1,7 @@
 <template>
   <div>
     <main>
-      <RegisterStep />
+      <PersonalData />
     </main>
   </div>
 </template>
@@ -9,16 +9,6 @@
 export default {
   layout: 'register',
   transition: '',
-  data() {
-    return {
-      firstImage: require('~/assets/images/register/first.svg'),
-    }
-  },
-  methods: {
-    next() {
-      this.$router.push({ path: '/' })
-    },
-  },
 }
 </script>
 <style>
