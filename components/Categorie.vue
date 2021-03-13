@@ -4,7 +4,7 @@
       <span class="display-3">
         O <strong>mix</strong> é a plataforma ideal para todos os tipos de
         <br />
-        restaurantes: <strong class="text-primary">grandes ou pequenos</strong>
+        negócios: <strong class="text-primary">grandes ou pequenos</strong>
       </span>
     </div>
     <div>
@@ -40,11 +40,12 @@ export default {
     return {
       categories: null,
       hooperSettings: {
-        itemsToShow: 5,
-        centerMode: true,
+        itemsToShow: 6,
+        centerMode: false,
         mouseDrag: true,
-        wheelControl: true,
+        wheelControl: false,
         infiniteScroll: true,
+        autoPlay: true,
       },
     }
   },

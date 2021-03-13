@@ -10,7 +10,7 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js",
     "deploy": "npm run build && node server.js",
-    "pm2":"pm2 deploy landing"
+    "pm2": "pm2 deploy landing"
   },
   "dependencies": {
     "@neneos/nuxt-animate.css": "0.0.1",
@@ -28,6 +28,7 @@
     "vue-rellax": "^0.2.0",
     "vue-scrollto": "^2.20.0",
     "vue-step-wizard": "^0.1.16",
+    "vue-tabs-with-active-line": "^1.2.6",
     "vue-the-mask": "^0.11.1",
     "vuelidate": "^0.7.6"
   },
