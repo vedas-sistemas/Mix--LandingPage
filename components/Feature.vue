@@ -1,9 +1,9 @@
 <template>
   <div
-    class="row align-center align-content-center section col-md-10 col-lg-10 mx-auto"
+    class="row align-center align-content-center col-md-10 col-lg-10 col-xs-12 mx-auto"
   >
-    <div class="text-center col-lg-6 col-md-8 col-xs-12 mx-auto">
-      <h3 class="display-3 my-5">
+    <div class="text-center col-lg-8 col-xs-12 col-md-8 col-xs-12 mx-auto">
+      <h3 class="display-3 display-2 display-4 display-5 display-1 my-5">
         Veja como é molezinha o cliente fazer o pedido na sua
         <strong class="text-primary">loja mix:</strong>
       </h3>
@@ -13,9 +13,9 @@
         v-for="(item, index) in icons"
         :key="index"
         href="#"
-        class="col-lg-3 col-md-3 col-sm-12 col-xs-6 text-center"
+        class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center"
       >
-        <div class="card card-hover pa-4">
+        <div class="card card-hover pa-4 my-5">
           <div class="page-section-image">
             <img :src="item.icon" />
           </div>

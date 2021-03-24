@@ -1,32 +1,32 @@
 <template>
-  <div class="col-md-12 my-5 col-lg-12 mx-auto">
-    <div class="col-md-8 mx-auto text-center my-5">
-      <span class="display-3"
+  <div>
+    <div class="col-md-8 col-lg-10 col-xs-12 mx-auto text-center my-5">
+      <span class="display-3 display-2 display-4 display-5 display-1 my-5"
         >O painel do mix é perfeito! Sendo o ideal para ajudar o seu delivery
-        crescer🚀.
+        crescer🚀
       </span>
     </div>
     <tabs
-      class="col-lg-5 col-sm-6 col-xs-12 col-sd-10 col-md-8"
+      class="col-lg-8 col-sm-6 col-xs-12 col-xs-12 col-md-8 col-xs-12"
       :tabs="tabs"
       :currentTab="currentTab"
-      :tab-class="'default-tabs__item'"
-      :tab-active-class="'default-tabs__item_active'"
+      :tab-class="'tab-title'"
+      :tab-active-class="'default-tabs__item_active, tabs-size'"
       :line-class="'default-tabs__active-line'"
       @onClick="handleClick"
     />
     <div class="content">
       <div v-if="currentTab === 'tab1'">
-        <div class="row align-center justify-center">
+        <div class="row align-center col-lg-10 mx-auto justify-center">
           <div
             v-for="(item, index) in functional"
             :key="index"
-            class="col-lg-6 my-5 col-sm-6 col-md-3 col-xs-12 col-sd-10"
+            class="col-lg-4 my-5 col-sm-6 col-md-3 col-xs-12 col-sd-10"
           >
             <img :src="item.image" />
 
             <div class="text-left">
-              <div class="display-4">
+              <div class="my-5">
                 <span v-text="item.title">
                   Dashboard com autodiagnóstico da sua operação
                 </span>
@@ -44,7 +44,9 @@
         </div>
       </div>
       <div v-if="currentTab === 'tab2'">
-        <div class="row col-md-10 mx-auto align-center justify-center">
+        <div
+          class="row col-md-10 col-xs-12 mx-auto align-center justify-center"
+        >
           <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 col-sd-10">
             <div class="my-5">
               <img :src="require('@/assets/images/feature/fidelity.png')" />
@@ -77,7 +79,9 @@
         </div>
       </div>
       <div v-if="currentTab === 'tab3'">
-        <div class="row col-md-10 mx-auto align-center justify-center">
+        <div
+          class="row col-md-10 col-xs-12 mx-auto align-center justify-center"
+        >
           <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 col-sd-10">
             <div class="my-5">
               <img :src="require('@/assets/images/feature/fidelity.png')" />
@@ -147,3 +151,8 @@ export default {
   },
 }
 </script>
+<style>
+.default-tabs__item_active {
+  text-align: center;
+}
+</style>

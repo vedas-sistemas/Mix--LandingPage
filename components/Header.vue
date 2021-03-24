@@ -3,7 +3,7 @@
     <div class="row align-center justify-center space-around">
       <div class="col-lg-5 col-sm-6 col-xs-12 col-sd-10 col-md-6">
         <div>
-          <span class="display-2">
+          <span class="display-2 display-4 display-3 display-1">
             Uma plataforma de <strong>delivery completa</strong> para seu o seu
             negócio
           </span>

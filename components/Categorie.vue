@@ -1,9 +1,8 @@
 <template>
-  <div class="section py-5">
+  <div class="py-5">
     <div class="text-center">
-      <span class="display-3">
+      <span class="display-3 display-2 display-4 display-5 display-1 my-5">
         O <strong>mix</strong> é a plataforma ideal para todos os tipos de
-        <br />
         negócios: <strong class="text-primary">grandes ou pequenos</strong>
       </span>
     </div>
@@ -46,6 +45,16 @@ export default {
         wheelControl: false,
         infiniteScroll: true,
         autoPlay: true,
+        breakpoints: {
+          360: {
+            centerMode: true,
+            itemsToShow: 2,
+          },
+          1000: {
+            itemsToShow: 6,
+            pagination: 'fraction',
+          },
+        },
       },
     }
   },
@@ -61,8 +70,5 @@ export default {
   width: 100px;
   height: 100px;
   padding: 15px 15px;
-}
-.card-categorie {
-  /* height: 60vh; */
 }
 </style>

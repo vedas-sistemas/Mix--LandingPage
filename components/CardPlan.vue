@@ -1,5 +1,5 @@
 <template>
-  <div id="pricing" class="section py-5 my-5">
+  <div id="pricing" class="py-5 my-5">
     <div class="title text-center grey-text">
       <span class="display-3">Flexível e poderoso</span>
     </div>
@@ -13,7 +13,7 @@
       <div
         v-for="(item, index) in plans"
         :key="index"
-        class="card card-hover mx-2 col-xs-12 col-lg-3 col-md-3"
+        class="card my-5 card-hover mx-2 col-xs-12 col-lg-3 col-md-3"
       >
         <div class="card-image">
           <img :src="item.image" />

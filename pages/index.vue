@@ -13,7 +13,7 @@
       <Categorie />
     </div>
 
-    <div class="col-md-12 col-lg-12 mx-auto">
+    <div class="col-md-12 col-xs-12 col-lg-12 mx-auto">
       <tabs-feature />
     </div>
     <div class="col-md-12 col-lg-12 mx-auto">
