@@ -1,5 +1,5 @@
 <template>
-  <div class="pa-5 row align-center">
+  <div class="row pa-2 align-center">
     <div class="logo-form">
       <img width="100" height="50px" :src="logo" />
     </div>
@@ -12,11 +12,11 @@
       :class="select_id === item.id ? 'selected-plan' : ''"
       @click="setPlan(item)"
     >
-      <div class="row align-center">
-        <div class="col-ml-3">
-          <img height="60px" :src="item.image" />
+      <div class="row align-center space-between">
+        <div class="col-ml-3 col-xs-1 col-sd-1 col-lg-1">
+          <img width="100%" height="60px" :src="item.image" />
         </div>
-        <div class="col-ml-8">
+        <div class="col-ml-8 col-xs-8 col-lg-10">
           <div class="text-left">
             <span v-text="item.title">Plano inciante</span>
           </div>

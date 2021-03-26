@@ -1,5 +1,5 @@
 <template>
-  <div class="row loading fill-height collunm justify-center align-center">
+  <div class="row pa-5 loading fill-height collunm justify-center align-center">
     <div class="col-ml-5">
       <div class="row justify-center mb-5">
         <img
@@ -8,12 +8,12 @@
         />
       </div>
 
-      <div class="text-center white-text display-4">
-        <span class="display-3 white-text"
-          >Pronto! Estamos preparando tudo para você</span
-        >
+      <div
+        class="text-center display-2 display-4 display-3 display-1 text-light"
+      >
+        <span>Pronto! Estamos preparando tudo para você</span>
       </div>
-      <div class="text-center white-text my-2">
+      <div class="text-center text-light my-2">
         <span
           >Seu cadastro foi realizado com sucesso. Enviaremos um e-mail
           <b>jhonatanborgesdj@gmail.com</b> quando tiver tudo certo.</span

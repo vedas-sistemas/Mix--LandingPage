@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="row colunm fill-height">
-      <div class="col-md-5 col-lg-5 page">
+      <div class="col-md-5 col-lg-5 page col-xs-12 col-sd-12 col-sm-12">
         <NuxtChild />
       </div>
       <hooper
         ref="carousel"
         :settings="hooperSettings"
-        class="bg-theme row justify-center align-flex-end col-md-7 col-lg-7"
+        class="bg-theme row justify-center align-flex-end col-md-7 col-lg-7 col-xs-12 hidden-xs hidden-sd hidden-sm col-sd-12"
       >
         <slide>
           <div class="slide-content">

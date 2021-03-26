@@ -4,7 +4,9 @@
       <div class="logo-form my-3">
         <img :src="logo" />
       </div>
-      <div class="display-4">Informações Pessoais</div>
+      <div class="display-2 display-4 display-3 display-1">
+        Informações Pessoais
+      </div>
       <div class="text">
         Para começar precisamos dos dados pessoais do proprietário ou
         responsável
