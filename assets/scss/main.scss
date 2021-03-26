@@ -1130,6 +1130,9 @@ $col-width: 8.333333333333333%; /* 1 Column Width = 100% / 12 */
     line-height: 1.5;
     color: #30333c;
   }
+  .hidden-sm {
+    display: none;
+  }
   .hooper-indicators {
     width: 40% !important;
   }
@@ -1203,7 +1206,9 @@ $col-width: 8.333333333333333%; /* 1 Column Width = 100% / 12 */
     max-width: $col-width * 11;
     flex-basis: $col-width * 11;
   }
-
+  .hidden-sd {
+    display: none;
+  }
   .col-sd-12 {
     padding: 0 11px;
     max-width: $col-width * 12;
@@ -1299,7 +1304,9 @@ $col-width: 8.333333333333333%; /* 1 Column Width = 100% / 12 */
   .hidden {
     display: none;
   }
-
+  .hidden-xs {
+    display: none;
+  }
   .card.card-contrast {
     margin: 15px 0px;
   }
