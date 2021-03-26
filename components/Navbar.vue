@@ -62,7 +62,8 @@ export default {
   },
   methods: {
     openMenu() {
-      document.getElementById('myNav').style.width = '100%'
+      // document.getElementById('myNav').style.width = '100%'
+      this.$router.push('/cadastrar/plano')
     },
     closeNav() {
       document.getElementById('myNav').style.width = '0%'
